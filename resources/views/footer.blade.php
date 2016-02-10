@@ -1,5 +1,5 @@
 <footer>
-    karajed
+    mrufka
     <div class="footer-logo-cont">
         <a href="#">{!! HTML::image('img/logo-footer.svgz', 'logo footer', array('class' => 'footer-logo')) !!}</a>
     </div>
