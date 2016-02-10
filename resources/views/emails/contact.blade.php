@@ -1,2 +1,7 @@
-{!! $content !!}<br/>
-From: {!! $name !!} {!! $phone ? ', '.$phone : '' !!}
+{{ $content }}<br/><br/>
+From:<br/>
+<strong>Pixsens LTD web</strong><br/>
+{{ $name }}
+@if($phone)
+    <br/>Phone: {{ $phone }}
+@endif

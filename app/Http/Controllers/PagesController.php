@@ -62,7 +62,7 @@ class PagesController extends Controller
                 'name' => 'Pixsens Team'
             ];
             Mail::send('emails.contact', ['content' => Input::get('content'), 'phone' => Input::get('phone'), 'name' => Input::get('name')], function ($m) use ($data) {
-                $m->from(Input::get('email'), 'Pixsens website');
+                $m->from(Input::get('email'), Input::get('name'));
                 $m->to($data['email'], $data['name'])->subject(Input::get('subject'));
             });
             return Redirect::to(trans('routes.contacts'))->with('success', 'Thank you for your message :)');
