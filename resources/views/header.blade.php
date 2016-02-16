@@ -8,5 +8,11 @@
         <li><a href="{{ url(trans('routes.services')) }}">{!! trans('menu.services') !!}</a></li>
         <li><a href="{{ url(trans('routes.contacts')) }}">{!! trans('menu.contacts') !!}</a></li>
     </ul>
-    {!! HTML::image('img/burger.svgz', 'menu line', array('class' => 'mob-hamb fright')) !!}
+    <!-- {!! HTML::image('img/burger.svgz', 'menu line', array('class' => 'mob-hamb fright')) !!} -->
+    <div id="nav-icon3" class="mob-hamb fright">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </header>

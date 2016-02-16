@@ -488,6 +488,28 @@ function highlightMenu(){
     });
 };
 
+/****************** fade in color lines *********************/
+
+function colorLines() {
+	$('.color-lines-web').delay(600).animate({opacity: 0.3}, 600).
+	animate({opacity: 0.2}, 800).
+	animate({opacity: 0.7}, 900).
+	animate({opacity: 0.3}, 1000).
+	animate({opacity: 0.9}, 1000).
+	animate({opacity: 0.4}, 900).
+	animate({opacity: 1}, 1000);
+};
+
+function colorLinesMob() {
+	$('.color-lines-mob').delay(800).animate({opacity: 1}, 2000)
+};
+/*******************  hamburger animation *****************/
+
+function hamburgerAnimate(){
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+	});
+};
 
 /********* executing ........ ************/
 
@@ -501,11 +523,15 @@ $( document ).ready(function() {
     'img/social-icons/f-icon-hover.svgz',
     'img/social-icons/gplus-icon-hover.svgz',
     'img/social-icons/in-icon-hover.svgz',
-    'img/social-icons/twitter-icon-hover.svgz'
+    'img/social-icons/twitter-icon-hover.svgz',
+	'img/color-lines-web.svg'
 	]);
 	checkWidth();
 	mobileMenu();
 	highlightMenu();
+	hamburgerAnimate();
+	colorLines();
+	colorLinesMob();
 });
 
 $(window).load(function() {

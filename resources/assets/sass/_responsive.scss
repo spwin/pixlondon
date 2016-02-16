@@ -351,7 +351,9 @@ MUSU PASLAUGOS PAGE
           max-width: 300px;
           display: block;
           z-index: 2;
-
+          -webkit-border-radius: 7px;
+          -moz-border-radius: 7px;
+          border-radius: 7px;
         }
         .opacity1 {
           opacity: 1;
@@ -823,7 +825,7 @@ MAIN
       margin-right: auto;
     }
     .color-lines-mob {
-      display:none;
+      display: none;
     }
     .color-lines-web {
       position: absolute;

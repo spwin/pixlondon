@@ -279,20 +279,87 @@ header {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    height: 55%;
+    height: 22px;
     position: relative;
     margin-left: 10px; }
+    @media screen and (min-width: 375px) {
+      header .head-logo {
+        height: 27.5px; } }
+    @media screen and (min-width: 414px) {
+      header .head-logo {
+        height: 33px; } }
+    @media screen and (min-width: 640px) {
+      header .head-logo {
+        height: 38.5px; } }
   header .web-lamp {
     display: none; }
   header .main-nav {
     display: none; }
   header .mob-hamb {
-    height: 55%;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    margin-top: 9px;
     margin-right: 10px; }
+    @media screen and (min-width: 375px) {
+      header .mob-hamb {
+        margin-top: 11.25px; } }
+    @media screen and (min-width: 414px) {
+      header .mob-hamb {
+        margin-top: 13.5px; } }
+    @media screen and (min-width: 640px) {
+      header .mob-hamb {
+        margin-top: 15.75px; } }
+  header #nav-icon3 {
+    width: 9.165625%;
+    /*29.33px;*/
+    height: 22px;
+    max-width: 58.65px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer; }
+    @media screen and (min-width: 375px) {
+      header #nav-icon3 {
+        height: 27.5px; } }
+    @media screen and (min-width: 414px) {
+      header #nav-icon3 {
+        height: 33px; } }
+    @media screen and (min-width: 640px) {
+      header #nav-icon3 {
+        height: 38.5px; } }
+  header #nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    background: #fff;
+    border-radius: 4.4px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: .25s ease-in-out; }
+  header #nav-icon3 span:nth-child(1) {
+    top: 0px; }
+  header #nav-icon3 span:nth-child(2), header #nav-icon3 span:nth-child(3) {
+    top: 40%;
+    /*18px*/ }
+  header #nav-icon3 span:nth-child(4) {
+    top: 80%;
+    /*36px*/ }
+  header #nav-icon3.open span:nth-child(1) {
+    top: 40%;
+    width: 0%;
+    left: 50%; }
+  header #nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  header #nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  header #nav-icon3.open span:nth-child(4) {
+    top: 40%;
+    width: 0%;
+    left: 50%; }
 
 div.main-paslaugos {
   width: 100%;
@@ -338,7 +405,7 @@ div.main-paslaugos {
     height: auto;
     display: none;
     margin-bottom: 30px;
-    background: url(../img/binding_dark.png) repeat;
+    background: url(../img/binding_dark_darker.png) repeat;
     box-shadow: 0 2px 1px rgba(255, 255, 255, 0.16), inset 0 3px 13px rgba(0, 0, 0, 0.93); }
     div.main-paslaugos .button-content .button-overlay {
       position: absolute;
@@ -520,14 +587,7 @@ body footer .footer-block ul.footer-list.footer-tags li:first-child {
 MAIN PAGE
 **************************/
 body.main {
-  background: #222;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#131313, #000);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradien(#131313, #000);
-  /* Standard syntax */
+  background: url(../img/binding_dark.png) repeat;
   overflow-x: hidden; }
 
 .margin0at {
@@ -570,9 +630,23 @@ div.main-main {
   div.main-main .color-lines-mob {
     position: absolute;
     left: 0;
-    right: 0; }
+    right: 0;
+    opacity: 0; }
   div.main-main .color-lines-web {
+    opacity: 0;
     display: none; }
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
   div.main-main .main-languages {
     width: 100%;
     padding: 0;
@@ -1092,7 +1166,8 @@ MUSU PASLAUGOS PAGE
           position: relative;
           max-width: 300px;
           display: block;
-          z-index: 2; }
+          z-index: 2;
+          border-radius: 7px; }
         div.main-paslaugos .sections section .opacity1 {
           opacity: 1; }
         div.main-paslaugos .sections section .hidden {

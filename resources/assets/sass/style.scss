@@ -363,9 +363,18 @@ header {
 
   .head-logo {
     @include middlealign(-50%);
-    height: 55%;
+    height: 22px;
     position: relative;
     margin-left: 10px;
+    @media screen and (min-width: 375px) {
+      height: 27.5px;
+    }
+    @media screen and (min-width: 414px) {
+      height: 33px;
+    }
+    @media screen and (min-width: 640px) {
+      height: 38.5px;
+    }
   }
 
   .web-lamp {
@@ -377,11 +386,101 @@ header {
   }
 
   .mob-hamb {
-    height: 55%;
-    position: relative;
-    @include middlealign(-50%);
+    margin-top: 9px;
     margin-right: 10px;
+    @media screen and (min-width: 375px) {
+      margin-top: 11.25px;
+    }
+    @media screen and (min-width: 414px) {
+      margin-top: 13.5px;
+    }
+    @media screen and (min-width: 640px) {
+      margin-top: 15.75px;
+    }
   }
+
+  #nav-icon3 {
+    width: 9.165625%; /*29.33px;*/
+    height: 22px;
+    max-width: 58.65px;
+    @media screen and (min-width: 375px) {
+      height: 27.5px;
+    }
+    @media screen and (min-width: 414px) {
+      height: 33px;
+    }
+    @media screen and (min-width: 640px) {
+      height: 38.5px;
+    }
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+
+  #nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    background: #fff;
+    border-radius: 4.4px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+
+  #nav-icon3 span:nth-child(1) {
+    top: 0px;
+  }
+
+  #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+    top: 40%; /*18px*/
+  }
+
+  #nav-icon3 span:nth-child(4) {
+    top: 80%; /*36px*/
+  }
+
+  #nav-icon3.open span:nth-child(1) {
+    top: 40%;
+    width: 0%;
+    left: 50%;
+  }
+
+  #nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  #nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  #nav-icon3.open span:nth-child(4) {
+    top: 40%;
+    width: 0%;
+    left: 50%;
+  }
+
 
 }
 
@@ -451,7 +550,7 @@ div.main-paslaugos {
     height: auto;
     display: none;
     margin-bottom: 30px;
-    background: url(../img/binding_dark.png) repeat;
+    background: url(../img/binding_dark_darker.png) repeat;
     box-shadow: 0 2px 1px rgba(255,255,255,0.16), inset 0 3px 13px rgba(0,0,0,0.93);
 
     .button-overlay {
@@ -699,11 +798,7 @@ MAIN PAGE
 
 body.main {
   @extend body.paslaugos;
-  background: #222; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#131313, #000); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#131313, #000); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#131313, #000); /* For Firefox 3.6 to 15 */
-  background: linear-gradien(#131313, #000); /* Standard syntax */
+  background:  url(../img/binding_dark.png) repeat;
   overflow-x: hidden;
 }
 
@@ -763,10 +858,29 @@ div.main-main {
     position: absolute;
     left: 0;
     right: 0;
+    opacity: 0;
   }
 
   .color-lines-web {
-    display:none;
+    opacity: 0;
+    display: none;
+  }
+
+  @-webkit-keyframes fadein {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes fadein {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes fadein {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fadein {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
   }
 
   .main-languages {
