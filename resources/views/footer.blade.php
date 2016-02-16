@@ -9,7 +9,7 @@
     </div>
     <div class="footer-flex">
         {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mb13')) !!}
-        <div class="footer-block footer-menu">
+        <div class="footer-block footer-menu resp-pad-left">
             <ul class="footer-list">
                 <li>{!! trans('footer.about-us') !!}</li>
                 <li><a href="{{ url(trans('routes.seo')) }}">{!! trans('footer.seo') !!}</a></li>
@@ -38,8 +38,8 @@
                 <li class="linkedin"><a href="{!! env('LINKEDIN') !!}">LinkedIn</a></li>
             </ul>
         </div>
-        {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mb13')) !!}
-        <div class="footer-block">
+        {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mb13 px1150-none')) !!}
+        <div class="footer-block resp-pad-right">
             <ul class="footer-list footer-tags">
                 {!! trans('footer.services-list') !!}
             </ul>

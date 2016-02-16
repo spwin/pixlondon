@@ -200,9 +200,20 @@ body {
   position: fixed;
   width: 93.75%;
   height: auto;
-  background: url(../img/menu-pattern.png);
+  background: url(../img/menu-pattern1.png);
+  -webkit-background-size: 20%;
+  background-size: 20%;
   z-index: 100;
-  top:63px;
+  top:40px;
+  @media screen and (min-width: 375px) {
+    top: 50px;
+  }
+  @media screen and (min-width: 414px) {
+    top: 60px;
+  }
+  @media screen and (min-width: 640px) {
+    top: 70px;
+  }
   display: none;
   left: 50%;
   transform: translateX(-50%);
@@ -324,8 +335,19 @@ body.paslaugos {
 header {
 
   width: 100%;
-  height: 63px;
-  background: url(../img/menu-pattern.png);
+  height: 40px;
+
+    @media screen and (min-width: 375px) {
+        height: 50px;
+    }
+    @media screen and (min-width: 414px) {
+      height: 60px;
+    }
+    @media screen and (min-width: 640px) {
+      height: 70px;
+    }
+
+  background: url(../img/menu-pattern1.png);
   position: fixed;
   top: 0;
   z-index: 101;
@@ -341,9 +363,13 @@ header {
 
   .head-logo {
     @include middlealign(-50%);
-    height: 23px;
+    height: 55%;
     position: relative;
     margin-left: 10px;
+  }
+
+  .web-lamp {
+    display: none;
   }
 
   .main-nav {
@@ -351,7 +377,7 @@ header {
   }
 
   .mob-hamb {
-    height: 23px;
+    height: 55%;
     position: relative;
     @include middlealign(-50%);
     margin-right: 10px;
@@ -427,6 +453,15 @@ div.main-paslaugos {
     margin-bottom: 30px;
     background: url(../img/binding_dark.png) repeat;
     box-shadow: 0 2px 1px rgba(255,255,255,0.16), inset 0 3px 13px rgba(0,0,0,0.93);
+
+    .button-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: -1;
+      opacity: 1;
+    }
 
     .first-par {
       display: inline-block;
@@ -654,17 +689,22 @@ footer {
   }
 }
 
+body footer .footer-block ul.footer-list.footer-tags li:first-child {
+  display: none;
+}
+
 /***********************
 MAIN PAGE
 **************************/
 
 body.main {
   @extend body.paslaugos;
-  background: #222;
-
-  header {
-    display: none;
-  }
+  background: #222; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#131313, #000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#131313, #000); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#131313, #000); /* For Firefox 3.6 to 15 */
+  background: linear-gradien(#131313, #000); /* Standard syntax */
+  overflow-x: hidden;
 }
 
 .margin0at {
@@ -672,13 +712,16 @@ body.main {
 }
 
 div.main-main {
-  margin-top: 55px;
+  margin-top: 75px;
   text-align: center;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   @media screen and (min-width: 415px) {
-    margin-top: 80px;
+    margin-top: 90px;
+  }
+  @media screen and (min-width: 640px) {
+    margin-top: 105px;
   }
   .content-header {
     .width50 {
@@ -692,8 +735,12 @@ div.main-main {
     display: block;
   }
 
+  .text-below-logo {
+    margin-top: 0;
+    font-size: 5.5vw;
+  }
+
   img.seperator.mt5 {
-    height: 2px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -703,115 +750,87 @@ div.main-main {
     font-size: 16px;
     letter-spacing: 1px;
   }
-  /*
-      .lang-bg {
-          position: absolute;
-          width: 100%;
-      }
-  */
-  .lang-flag {
-    width: 38px;
-    position: absolute;
-  }
-
-  .first-flag {
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 9%;
-  }
-
-  .second-flag {
-    top: 50%;
-    left: 9%;
-    margin-top: -19.5px;
-  }
-
-  .third-flag {
-    top: 50%;
-    right: 9%;
-    margin-top: -19.5px;
-  }
-
-  .fourth-flag {
-    left: 0;
-    right: 0;
-    margin: auto;
-    bottom: 9%;
-  }
 
   .lang-text {
     font-size: 16px;
-    top:50%;
-    margin-top: -11px;
     margin-left: auto;
     margin-right: auto;
-    left:0;
-    right: 0;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .color-lines-mob {
     position: absolute;
-    transform: rotate(315deg);
+    left: 0;
+    right: 0;
+  }
+
+  .color-lines-web {
+    display:none;
   }
 
   .main-languages {
     width: 100%;
-    height: 0;
-    background: url(../img/logo-languages.svgz) no-repeat;
     padding: 0;
-    padding-bottom: 100%;
     position: relative;
-    background-position: center center;
-    background-size: 100%;
-    display: table;
+    margin-top: 65%;
   }
 
+  .lang-square {
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 15px;
+    margin-left: 5px;
+    font-size: 27px;
+    text-align: center;
+    color: white;
+    border: 2px solid transparent;
+  }
+
+  .chosen {
+    border: 2px solid #27AC23 !important;
+    color: #27AC23;
+  }
+
+  .lang-square:hover {
+    border: 2px solid white;
+  }
+
+  .lang-square span {
+    margin-top: 3px;
+  }
+
+  .lang-square:first-child {
+    margin-left: 0px;
+  }
   @media screen and (min-width: 360px) {
     .logo-text,
-    .lang-text {
+    .lang-text, {
       font-size: 18px;
     }
 
-    .lang-text {
-      margin-top: -12px;
-    }
-
-    .lang-flag {
-      width: 42px;
-    }
-
-    .second-flag,
-    .third-flag {
-      margin-top: -22px;
-    }
   }
 
   @media screen and (min-width: 415px) {
     .logo-text,
-    .lang-text {
+    .lang-text, {
       font-size: 20px;
     }
 
-    .lang-text {
-      margin-top: -13.5px;
-    }
-
-    .lang-flag {
-      width: 55px;
-    }
-
-    .second-flag,
-    .third-flag {
-      margin-top: -28.5px;
-    }
   }
 
   @media screen and (min-width: 530px) {
-    .logo-text {
+    .logo-text, {
       font-size: 24px;
     }
   }
 
   @media screen and (min-width: 640px) {
-    .logo-text {
+    .logo-text, {
       font-size: 30px;
     }
 
@@ -819,18 +838,6 @@ div.main-main {
       font-size: 25px;
     }
 
-    .lang-text {
-      margin-top: -17px;
-    }
-
-    .lang-flag {
-      width: 82px;
-    }
-
-    .second-flag,
-    .third-flag {
-      margin-top: -42.5px;
-    }
   }
 
   .main-zone {
@@ -1005,6 +1012,11 @@ div.main-contacts {
     font-size: 18px;
     font-family: Open Sans, Sans;
     font-weight: 300;
+
+    @media screen and (min-width: 1024px) {
+      min-width: 260px;
+      min-height: 50px;
+    }
   }
 
   .wpcf7-form input[type="submit"] {

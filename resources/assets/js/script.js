@@ -87,6 +87,17 @@ function sectionsHeight(){
 	}
 }
 
+/********************* button-content height musu paslaugos *************************/
+
+function buttonsHeight(){
+	if ($(window).width() > 1023) {
+		$('div.main-paslaugos .button-content').each( function() {
+			var height = $(this).height();
+			$(this).css('height', height);
+		})
+	}
+}
+
 /******************** preload images ************************/
 
 function preload(arrayOfImages) {
@@ -153,5 +164,6 @@ $( document ).ready(function() {
 });
 
 $(window).load(function() {
-      sectionsHeight();
+	sectionsHeight();
+	buttonsHeight();
 });

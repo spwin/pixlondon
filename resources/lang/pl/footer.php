@@ -12,6 +12,6 @@ return [
     'city' => 'London',
 
     'find-us' => 'ZNAJDŹ NAS',
-    'services-list' => '<li>Tworzenie stron internetowych</li> <li>Usługi pozycjonowania</li> <li>Responsywne strony</li> <li>Programowanie styli css</li> <li>Projektowanie graficzne</li> <li>Rozwój marki</li> <li>Tworzenie logo i znaków towarowych</li> <li>Usługi programistyczne</li> <li>Promocja sieciowa</li> <li>Utrzymanie stron</li>',
+    'services-list' => '<li>USŁUGI</li> <li>Tworzenie stron internetowych</li> <li>Usługi pozycjonowania</li> <li>Responsywne strony</li> <li>Programowanie styli css</li> <li>Projektowanie graficzne</li> <li>Rozwój marki</li> <li>Tworzenie logo i znaków towarowych</li> <li>Usługi programistyczne</li> <li>Promocja sieciowa</li> <li>Utrzymanie stron</li>',
 
 ];

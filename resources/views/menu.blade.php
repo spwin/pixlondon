@@ -13,9 +13,9 @@
         {!! HTML::image('img/menu-line.png', 'menu line', array('class' => 'seperator wide-seperator mob-visible')) !!}
         <a href="{{ url(trans('routes.design')) }}"><li><span>{!! trans('menu.mobile-design') !!}</span></li></a>
         {!! HTML::image('img/menu-line.png', 'menu line', array('class' => 'seperator wide-seperator mob-visible')) !!}
-        <a href="{{ url(trans('routes.services')) }}"><li><span>{!! trans('menu.mobile-services') !!}}</span></li></a>
+        <a href="{{ url(trans('routes.services')) }}"><li><span>{!! trans('menu.mobile-services') !!}</span></li></a>
         {!! HTML::image('img/menu-line.png', 'menu line', array('class' => 'seperator wide-seperator mob-visible')) !!}
-        <a href="{{ url(trans('routes.contacts')) }}"><li><span>{!! trans('menu.mobile.contacts') !!}</span></li></a>
+        <a href="{{ url(trans('routes.contacts')) }}"><li><span>{!! trans('menu.mobile-contacts') !!}</span></li></a>
     </ul>
     {!! HTML::image('img/menu-line.png', 'menu line', array('class' => 'seperator wide-seperator mob-visible')) !!}
     <div class="mob-menu-social">

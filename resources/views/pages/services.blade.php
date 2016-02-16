@@ -8,8 +8,8 @@
     @include('menu')
     <div class="main-paslaugos">
         <div class="paslaugos-header">
-            <h1 class="light">{!! trans('services.header-text-1') !!}</h1>
-            <span class="h2-pasl-text">{!! trans('services.under-header-text-1') !!}</span>
+            <h1 class="bold">{!! trans('services.header-text-1') !!}</h1>
+            <span class="fs22">{!! trans('services.under-header-text-1') !!}</span>
         </div>
 
         <div class="sections">
@@ -29,6 +29,7 @@
                 </div>
 
                 <div class="button-content">
+                    <div class="button-overlay"></div>
                     <span class="first-par mt20">{!! trans('services.first-text-1') !!}</span>
                     <span class="second-par mt20">{!! trans('services.second-text-1') !!}</span>
                     <div class="daugiau-button">
@@ -51,6 +52,7 @@
                 </div>
 
                 <div class="button-content">
+                    <div class="button-overlay"></div>
                     <span class="first-par mt20">{!! trans('services.first-text-2') !!}</span>
                     <span class="second-par mt20">{!! trans('services.second-text-2') !!}</span>
                     <div class="daugiau-button">
@@ -73,6 +75,7 @@
                 </div>
 
                 <div class="button-content">
+                    <div class="button-overlay"></div>
                     <span class="first-par mt20">{!! trans('services.first-text-3') !!}</span>
                     <span class="second-par mt20">{!! trans('services.second-text-3') !!}</span>
                     <div class="daugiau-button">

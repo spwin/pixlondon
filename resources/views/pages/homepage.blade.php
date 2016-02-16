@@ -1,21 +1,31 @@
 @extends('layout')
 @section('title', 'WEB dizaino ir programavimo paslaugos Londone')
+@section('header')
+    @include('header')
+@stop
 @section('body_class', 'main')
 @section('content')
+    @include('menu')
     <div class="main-main">
-        {!! HTML::image('img/logo.svgz', 'logo', array('class' => 'main-logo')) !!}
-        {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mt5')) !!}
-        <span class="logo-text light">breathing life into pixels</span>
-        {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mt5')) !!}
-        <div class="main-languages mt20">
-            <a href="{{ url('http://'.env('LT_WEB')).'/'.trans('routes.services', [], [], 'lt') }}">{!! HTML::image('img/flag-lt.png', 'lithuanian language select', array('class' => 'first-flag lang-flag')) !!}</a>
-            <a href="{{ url('http://'.env('PL_WEB')).'/'.trans('routes.services', [], [], 'pl') }}">{!! HTML::image('img/flag-pl.png', 'polish language select', array('class' => 'second-flag lang-flag')) !!}</a>
-            <a href="{{ url('http://'.env('RU_WEB')).'/'.trans('routes.services', [], [], 'ru') }}">{!! HTML::image('img/flag-ru.png', 'russian language select', array('class' => 'third-flag lang-flag')) !!}</a>
-            <a href="{{ url('http://'.env('WEB')) }}">{!! HTML::image('img/flag-uk.png', 'english language select', array('class' => 'fourth-flag lang-flag')) !!}</a>
-            <p class="lang-text"><span class="green">Choose</span> Your <span class="green">Language</span></p>
+        <div class="logo-and-text">
+            {!! HTML::image('img/logo.svgz', 'logo', array('class' => 'main-logo')) !!}
+            <p class="text-below-logo light">Breathing life into pixels</p>
         </div>
-        {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mt20')) !!}
-        <p class="main-text"><span class="green">WEB</span> dizaino, programavimo ir SEO <span class="green">paslaugos Londone</span></p>
-        {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mb20')) !!}
+        {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mt5')) !!}
+        <span class="logo-text light">WEB dizaino, programavimo<br> ir SEO paslaugos Londone</span>
+        {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mt5')) !!}
+        {!! HTML::image('img/color-lines-mob.svg', 'line', array('class' => 'color-lines-mob')) !!}
+        {!! HTML::image('img/color-lines-web.svg', 'line', array('class' => 'color-lines-web left-line')) !!}
+        {!! HTML::image('img/color-lines-web.svg', 'line', array('class' => 'color-lines-web right-line')) !!}
+        <div class="main-languages">
+            <p class="lang-text"><span class="green">Pasirinkite</span> norimą <span class="green">kalbą</span></p>
+        </div>
+        {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mt5')) !!}
+        <div class="lang-choice mt5">
+            <a href="{{ url('http://'.env('LT_WEB')).'/'.trans('routes.services', [], [], 'lt') }}"><div class="lang-square chosen"><span class="inline-block">LT</span></div></a>
+            <a href="{{ url('http://'.env('PL_WEB')).'/'.trans('routes.services', [], [], 'pl') }}"><div class="lang-square"><span class="inline-block">PL</span></div></a>
+            <a href="{{ url('http://'.env('RU_WEB')).'/'.trans('routes.services', [], [], 'ru') }}"><div class="lang-square"><span class="inline-block">RU</span></div></a>
+        </div>
+        {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mb20 mt5')) !!}
     </div>
 @stop

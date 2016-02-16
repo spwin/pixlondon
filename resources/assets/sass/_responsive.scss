@@ -80,6 +80,7 @@ footer ul.footer-list li:first-child {
 
 /*********************** HEADER MARGINS **************************/
 
+
 @media screen and (min-width: 600px) {
   div.main-design,
   div.main-paslaugos,
@@ -114,9 +115,15 @@ footer ul.footer-list li:first-child {
   header {
     position: relative;
     .head-logo {
-      @media screen and (min-width: 1366px) {
-        height: 27px;
-      }
+        height: 40%;
+    }
+
+    .mob-lamp {
+      display: none;
+    }
+
+    .web-lamp {
+      display: block;
     }
 
     .main-nav li {
@@ -188,12 +195,60 @@ footer ul.footer-list li:first-child {
 
 @media screen and (min-width: 1024px) {
   footer {
+    position: absolute;
+    left: 0;
+    background: rgb(18,18,18); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#131313, #000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#131313, #000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#131313, #000); /* For Firefox 3.6 to 15 */
+    background: linear-gradien(#131313, #000); /* Standard syntax */
+    border-radius: 0;
     .footer-block {
       .footer-list {
         li {
           margin-top: 15px;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  footer {
+    img.wide-seperator.mob-visible.px1150-none {
+      display: none;
+    }
+    .footer-block.resp-pad-left {
+      padding-left: 7%;
+    }
+    .footer-block.resp-pad-right {
+      width: 235px;
+      padding-right: 7%;
+    }
+    .footer-block ul.footer-list.footer-tags {
+      text-align: left;
+    }
+  }
+
+  body footer .footer-block ul.footer-list.footer-tags li {
+    border: none;
+  }
+
+  body footer .footer-block ul.footer-list.footer-tags li:first-child {
+    display: block;
+    font-size: 17px;
+    color: #b6b6b6;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  footer {
+    .footer-block.resp-pad-left {
+      padding-left: 11%;
+    }
+    .footer-block.resp-pad-right {
+      padding-right: 11%;
     }
   }
 }
@@ -733,29 +788,32 @@ MAIN
     margin-top: 50px;
 
     .main-logo {
-      width: 20.82%;
+      width: 38%;
+    }
+    .logo-and-text {
+      margin-bottom: 100px;
+    }
+    .text-below-logo {
+      font-size: 3vw;
     }
     .main-languages {
-      width: 41%;
-      padding-bottom: 41%;
       margin-left: auto;
       margin-right: auto;
+      margin-top: 150px;
     }
     .logo-text,
     .lang-text,
     .main-text {
-      font-size: 22px;
+      font-size: 28px;
     }
 
-    .lang-flag {
-      width: 55px;
-    }
-    .second-flag,
-    .third-flag {
-      margin-top: -28.5px;
-    }
     img.seperator.mt5 {
-      width: 320px;
+      width: 500px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    img.seperator.wide-seperator.mob-visible.mb20.mt5  {
+      margin-bottom: 50px;
     }
     img.wide-seperator.mt20,
     img.wide-seperator.mb20 {
@@ -763,6 +821,25 @@ MAIN
       height: 4px;
       margin-left: auto;
       margin-right: auto;
+    }
+    .color-lines-mob {
+      display:none;
+    }
+    .color-lines-web {
+      position: absolute;
+      display: block;
+    }
+    .color-lines-web.left-line {
+      top: -115px;
+      right: 70%;
+      height: 1000px;
+      transform: rotate(180deg);
+    }
+    .color-lines-web.right-line {
+      transform: rotateY(180deg);
+      top: -400px;
+      height: 1500px;
+      left: 67%;
     }
   }
 }
