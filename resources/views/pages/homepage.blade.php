@@ -15,8 +15,8 @@
         <span class="logo-text light">WEB dizaino, programavimo<br> ir SEO paslaugos Londone</span>
         {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mt5')) !!}
         {!! HTML::image('img/color-lines-mob.svg', 'line', array('class' => 'color-lines-mob')) !!}
-        {!! HTML::image('img/color-lines-web.svg', 'line', array('class' => 'color-lines-web left-line')) !!}
-        {!! HTML::image('img/color-lines-web.svg', 'line', array('class' => 'color-lines-web right-line')) !!}
+        {!! HTML::image('', 'line', array('class' => 'color-lines-web left-line', 'lsrc' => 'img/color-lines-web.svg')) !!}
+        {!! HTML::image('', 'line', array('class' => 'color-lines-web right-line', 'lsrc' => 'img/color-lines-web.svg')) !!}
         <div class="main-languages">
             <p class="lang-text"><span class="green">Pasirinkite</span> norimą <span class="green">kalbą</span></p>
         </div>

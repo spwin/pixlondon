@@ -862,25 +862,7 @@ div.main-main {
   }
 
   .color-lines-web {
-    opacity: 0;
     display: none;
-  }
-
-  @-webkit-keyframes fadein {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @-moz-keyframes fadein {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @-o-keyframes fadein {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @keyframes fadein {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
   }
 
   .main-languages {
@@ -1126,11 +1108,6 @@ div.main-contacts {
     font-size: 18px;
     font-family: Open Sans, Sans;
     font-weight: 300;
-
-    @media screen and (min-width: 1024px) {
-      min-width: 260px;
-      min-height: 50px;
-    }
   }
 
   .wpcf7-form input[type="submit"] {

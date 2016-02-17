@@ -491,18 +491,17 @@ function highlightMenu(){
 /****************** fade in color lines *********************/
 
 function colorLines() {
-	$('.color-lines-web').delay(600).animate({opacity: 0.3}, 600).
-	animate({opacity: 0.2}, 800).
-	animate({opacity: 0.7}, 900).
-	animate({opacity: 0.3}, 1000).
-	animate({opacity: 0.9}, 1000).
-	animate({opacity: 0.4}, 900).
-	animate({opacity: 1}, 1000);
+	if ($(window).width() > 1023) {
+		$('.color-lines-web').animate({opacity: 1}, 3000);
+	}
 };
 
 function colorLinesMob() {
-	$('.color-lines-mob').delay(800).animate({opacity: 1}, 2000)
+	if ($(window).width() < 1024) {
+		$('.color-lines-mob').animate({opacity: 1}, 3000);
+	}
 };
+
 /*******************  hamburger animation *****************/
 
 function hamburgerAnimate(){
@@ -530,12 +529,30 @@ $( document ).ready(function() {
 	mobileMenu();
 	highlightMenu();
 	hamburgerAnimate();
-	colorLines();
-	colorLinesMob();
 });
 
 $(window).load(function() {
 	sectionsHeight();
 	buttonsHeight();
+	$(function(){
+		$.each(document.images, function(){
+			var this_image = this;
+			var src = $(this_image).attr('src') || '' ;
+			if(src.length > 0){
+				//this_image.src = options.loading; // show loading
+				var lsrc = $(this_image).attr('lsrc') || '' ;
+				if(lsrc.length > 0){
+					var img = new Image();
+					img.src = lsrc;
+					$(img).load(function() {
+						this_image.src = this.src;
+						colorLines();
+						colorLinesMob();
+					});
+				}
+			}
+		});
+	});
+
 });
 //# sourceMappingURL=all.js.map

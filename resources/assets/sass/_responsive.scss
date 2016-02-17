@@ -231,7 +231,7 @@ footer ul.footer-list li:first-child {
   }
 
   body footer .footer-block ul.footer-list.footer-tags li {
-    border: none;
+    display: inline;
   }
 
   body footer .footer-block ul.footer-list.footer-tags li:first-child {
@@ -239,6 +239,7 @@ footer ul.footer-list li:first-child {
     font-size: 17px;
     color: #b6b6b6;
     margin-bottom: 15px;
+    border: none;
   }
 }
 
@@ -829,7 +830,8 @@ MAIN
     }
     .color-lines-web {
       position: absolute;
-      display: block;
+      display: inline;
+      opacity: 0;
     }
     .color-lines-web.left-line {
       top: -115px;

@@ -633,20 +633,7 @@ div.main-main {
     right: 0;
     opacity: 0; }
   div.main-main .color-lines-web {
-    opacity: 0;
     display: none; }
-
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes fadein {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
   div.main-main .main-languages {
     width: 100%;
     padding: 0;
@@ -805,11 +792,6 @@ div.main-contacts .wpcf7-form textarea {
   font-size: 18px;
   font-family: Open Sans, Sans;
   font-weight: 300; }
-  @media screen and (min-width: 1024px) {
-    div.main-contacts .wpcf7-form input,
-    div.main-contacts .wpcf7-form textarea {
-      min-width: 260px;
-      min-height: 50px; } }
 
 div.main-contacts .wpcf7-form input[type="submit"] {
   padding-left: 33px;
@@ -1083,12 +1065,13 @@ footer ul.footer-list li:first-child {
   footer .footer-block ul.footer-list.footer-tags {
     text-align: left; }
   body footer .footer-block ul.footer-list.footer-tags li {
-    border: none; }
+    display: inline; }
   body footer .footer-block ul.footer-list.footer-tags li:first-child {
     display: block;
     font-size: 17px;
     color: #b6b6b6;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px;
+    border: none; } }
 
 @media screen and (min-width: 1366px) {
   footer .footer-block.resp-pad-left {
@@ -1472,7 +1455,8 @@ MAIN
       display: none; }
     div.main-main .color-lines-web {
       position: absolute;
-      display: block; }
+      display: inline;
+      opacity: 0; }
     div.main-main .color-lines-web.left-line {
       top: -115px;
       right: 70%;
