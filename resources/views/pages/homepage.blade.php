@@ -26,6 +26,12 @@
             <a href="{{ url('http://'.env('PL_WEB')).'/'.trans('routes.services', [], [], 'pl') }}"><div class="lang-square"><span class="inline-block">PL</span></div></a>
             <a href="{{ url('http://'.env('RU_WEB')).'/'.trans('routes.services', [], [], 'ru') }}"><div class="lang-square"><span class="inline-block">RU</span></div></a>
         </div>
-        {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mb20 mt5')) !!}
+        {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mt5')) !!}
+        <div class="homepage-button mt20">
+            <a href="{{ url('http://'.env('LT_WEB')).'/'.trans('routes.services', [], [], 'lt') }}">
+                <p>Mūsų <span class="green">paslaugos</span></p>
+                {!! HTML::image('img/arrow-green.svgz', 'arrow', array('class' => 'homepage-button-img')) !!}
+            </a>
+        </div>
     </div>
 @stop
