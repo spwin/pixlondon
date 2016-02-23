@@ -13,7 +13,6 @@
 <body class="@yield('body_class')">
     @yield('header')
     @yield('content')
-    @include('footer')
     {!! HTML::script('js/all.js', array(), false) !!}
     @stack('scripts')
 </body>

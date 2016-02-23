@@ -13,7 +13,7 @@ switch($domain){
     case env('LT_WEB') : App::setLocale('lt'); break;
     case env('RU_WEB') : App::setLocale('ru'); break;
     case env('PL_WEB') : App::setLocale('pl'); break;
-    default: App::setLocale('lt'); break;
+    default: App::setLocale('en'); break;
 }
 
 /*
@@ -41,7 +41,7 @@ if($routing_schema == 'content'){
 	Route::get('/{contacts}/','PagesController@contacts');
 	Route::post('send-mail', 'PagesController@sendMail');
 } elseif($routing_schema == 'homepage') {
-	Route::get('/', 'PagesController@index');
+	Route::get('/', 'PagesController@home');
 }
 Route::get('sitemap', 'SitemapsController@index');
 Route::get('robots.txt', function ()

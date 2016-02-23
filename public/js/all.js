@@ -529,10 +529,10 @@ $( document ).ready(function() {
 	mobileMenu();
 	highlightMenu();
 	hamburgerAnimate();
+	sectionsHeight();
 });
 
 $(window).load(function() {
-	sectionsHeight();
 	buttonsHeight();
 	$(function(){
 		$.each(document.images, function(){

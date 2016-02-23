@@ -1,6 +1,6 @@
 <footer>
     <div class="footer-logo-cont">
-        <a href="#">{!! HTML::image('img/logo-footer.svgz', 'logo footer', array('class' => 'footer-logo')) !!}</a>
+        <a href="{{ url('/') }}">{!! HTML::image('img/logo-footer.svgz', 'logo footer', array('class' => 'footer-logo')) !!}</a>
     </div>
     {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mb13')) !!}
 

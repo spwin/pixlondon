@@ -85,7 +85,8 @@
   height: 4px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #ffffff; }
 
 a:visited {
   color: inherit; }
@@ -253,7 +254,7 @@ body.paslaugos, body.main, body.seo, body.contacts {
   padding: 0;
   font-family: Open Sans, sans-serif;
   color: #FFF;
-  background: url(../img/binding_dark.png) repeat; }
+  background: #1A1A1A url(../img/binding_dark.png) repeat; }
 
 /********* HEADER ***********/
 header {
@@ -386,7 +387,7 @@ div.main-paslaugos {
   div.main-paslaugos .kokybe-seperator {
     display: none; }
   div.main-paslaugos .paslaugos-button {
-    background: url(../img/binding_dark.png) repeat; }
+    background: #1A1A1A url(../img/binding_dark.png) repeat; }
     div.main-paslaugos .paslaugos-button .paslaugos-icon {
       display: none; }
     div.main-paslaugos .paslaugos-button h2 {
@@ -453,7 +454,7 @@ div.main-paslaugos {
   div.main-paslaugos div.kokybe-wrap {
     width: 100%;
     margin-bottom: 60px;
-    background: url(../img/binding_dark.png) repeat; }
+    background: #1A1A1A url(../img/binding_dark.png) repeat; }
     div.main-paslaugos div.kokybe-wrap .kokybe-seperator {
       display: none; }
     div.main-paslaugos div.kokybe-wrap .ribbon {
@@ -590,7 +591,7 @@ body footer .footer-block ul.footer-list.footer-tags.first-invisible li:first-ch
 MAIN PAGE
 **************************/
 body.main {
-  background: url(../img/binding_dark.png) repeat;
+  background: #1A1A1A url(../img/binding_dark.png) repeat;
   overflow-x: hidden; }
 
 .margin0at {
@@ -1482,6 +1483,8 @@ MAIN
       height: 1000px;
       -webkit-transform: rotate(180deg);
       transform: rotate(180deg); }
+      div.main-main .color-lines-web.left-line.tall {
+        height: 1215px; }
     div.main-main .color-lines-web.right-line {
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);

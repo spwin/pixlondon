@@ -127,6 +127,7 @@ $light: 300;
 }
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 a:visited {
   color: inherit;
@@ -328,7 +329,7 @@ body.paslaugos {
   padding: 0;
   font-family: $main-font;
   color: $main-color;
-  background: url(../img/binding_dark.png) repeat;
+  background: #1A1A1A url(../img/binding_dark.png) repeat;
 }
 
 /********* HEADER ***********/
@@ -521,7 +522,7 @@ div.main-paslaugos {
   }
 
   .paslaugos-button {
-    background: url(../img/binding_dark.png) repeat;
+    background: #1A1A1A url(../img/binding_dark.png) repeat;
 
     .paslaugos-icon {
       display: none;
@@ -609,7 +610,7 @@ div.main-paslaugos {
   div.kokybe-wrap {
     width: 100%;
     margin-bottom: 60px;
-    background: url(../img/binding_dark.png) repeat;
+    background: #1A1A1A url(../img/binding_dark.png) repeat;
 
     .kokybe-seperator {
       display: none;
@@ -801,7 +802,7 @@ MAIN PAGE
 
 body.main {
   @extend body.paslaugos;
-  background:  url(../img/binding_dark.png) repeat;
+  background:  #1A1A1A url(../img/binding_dark.png) repeat;
   overflow-x: hidden;
 }
 
@@ -945,13 +946,13 @@ div.main-main {
   }
 
   @media screen and (min-width: 530px) {
-    .logo-text, {
+    .logo-text {
       font-size: 24px;
     }
   }
 
   @media screen and (min-width: 640px) {
-    .logo-text, {
+    .logo-text {
       font-size: 30px;
     }
 

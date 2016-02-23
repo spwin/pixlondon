@@ -118,4 +118,5 @@
             <a href="{{ url(trans('routes.contacts')) }}"><div class="centered width50"></div></a>
         </div>
     </div>
+    @include('footer')
 @stop

@@ -91,4 +91,5 @@
             <div class="kokybe-span">{!! trans('services.warranty-text-2') !!}</div>
         </div>
     </div>
+    @include('footer')
 @stop

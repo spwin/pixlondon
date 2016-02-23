@@ -47,4 +47,5 @@
             <p class="content-text bold fs20"><span class="green inline-block">{!! trans('contacts.phone-number') !!}</span><span class="inline-block">{!! trans('contacts.email-address') !!}</span><span class="inline-block green">London, UK</span></p>
         </div>
     </div>
+    @include('footer')
 @stop

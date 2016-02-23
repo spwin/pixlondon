@@ -19,6 +19,10 @@ class PagesController extends Controller
         return view('pages.homepage');
     }
 
+    public function home(){
+        return view('pages.home');
+    }
+
     public function seo(){
         return view('pages.seo');
     }

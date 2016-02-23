@@ -838,6 +838,9 @@ MAIN
       right: 70%;
       height: 1000px;
       transform: rotate(180deg);
+      &.tall{
+        height: 1215px;
+      }
     }
     .color-lines-web.right-line {
       transform: rotateY(180deg);
