@@ -492,6 +492,7 @@ footer {
 }
 */
 footer {
+  opacity: 0.9;
   width: 100%;
   height: auto;
   background-color: rgba(0, 0, 0, 0.4);
@@ -1058,6 +1059,14 @@ footer ul.footer-list li:first-child {
   body footer .footer-block.footer-menu {
     display: inline-block; } }
 
+@media screen and (min-width: 500px) {
+  body footer .footer-block ul.footer-list.footer-tags li:first-child {
+    display: block;
+    font-size: 17px;
+    color: #b6b6b6;
+    margin-bottom: 15px;
+    border: none; } }
+
 @media screen and (min-width: 1024px) {
   footer {
     position: absolute;
@@ -1075,6 +1084,8 @@ footer ul.footer-list li:first-child {
       margin-top: 15px; } }
 
 @media screen and (min-width: 1150px) {
+  body.homepage footer {
+    bottom: 0; }
   footer img.wide-seperator.mob-visible.px1150-none {
     display: none; }
   footer .footer-block.resp-pad-left {
@@ -1085,13 +1096,7 @@ footer ul.footer-list li:first-child {
   footer .footer-block ul.footer-list.footer-tags {
     text-align: left; }
   body footer .footer-block ul.footer-list.footer-tags li {
-    display: inline; }
-  body footer .footer-block ul.footer-list.footer-tags li:first-child {
-    display: block;
-    font-size: 17px;
-    color: #b6b6b6;
-    margin-bottom: 15px;
-    border: none; } }
+    display: inline; } }
 
 @media screen and (min-width: 1366px) {
   footer .footer-block.resp-pad-left {
@@ -1448,13 +1453,13 @@ MAIN
     div.main-main .main-logo {
       width: 38%; }
     div.main-main .logo-and-text {
-      margin-bottom: 100px; }
+      margin-bottom: 20px; }
     div.main-main .text-below-logo {
       font-size: 3vw; }
     div.main-main .main-languages {
       margin-left: auto;
       margin-right: auto;
-      margin-top: 150px; }
+      margin-top: 40px; }
     div.main-main .logo-text,
     div.main-main .lang-text,
     div.main-main .main-text {
@@ -1484,12 +1489,12 @@ MAIN
       -webkit-transform: rotate(180deg);
       transform: rotate(180deg); }
       div.main-main .color-lines-web.left-line.tall {
-        height: 1215px; }
+        height: 1105px; }
     div.main-main .color-lines-web.right-line {
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
       top: -400px;
-      height: 1500px;
+      height: 1390px;
       left: 67%; } }
 
 @media screen and (min-width: 1360px) {

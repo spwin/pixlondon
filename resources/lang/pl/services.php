@@ -6,7 +6,7 @@ return [
     'more' => 'Zobacz więcej',
 
     'seo' => 'POZYCJONOWANIE STRON',
-    'hidden-text-1' => '<span class="bold blue">WYsokie pozycje</span> w wyszukiwarkach!',
+    'hidden-text-1' => '<span class="bold blue">Wysokie pozycje</span> w wyszukiwarkach!',
     'first-text-1' => 'Poprawnie zoptymalizowana pod kątem wyszukiwarek internetowych strona zawsze pojawia się na górze wyników wyszukiwania.',
     'second-text-1' => '<span class="blue">Czy wiesz że:</span> 70% klientów odnajduje potrzebne produkty i usługi za pomocą wyszukiwarek internetowych?',
 

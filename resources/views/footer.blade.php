@@ -40,7 +40,7 @@
         </div>
         {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mb13 px1150-none')) !!}
         <div class="footer-block resp-pad-right">
-            <ul class="footer-list footer-tags first-invisible">
+            <ul class="footer-list footer-tags">
                 {!! trans('footer.services-list') !!}
             </ul>
         </div>

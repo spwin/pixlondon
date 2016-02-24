@@ -14,6 +14,6 @@
     @yield('header')
     @yield('content')
     {!! HTML::script('js/all.js', array(), false) !!}
-    @stack('scripts')
+    @yield('scripts')
 </body>
 </html>

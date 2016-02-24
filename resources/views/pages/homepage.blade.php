@@ -3,7 +3,7 @@
 @section('header')
     @include('header')
 @stop
-@section('body_class', 'main')
+@section('body_class', 'main homepage')
 @section('content')
     @include('menu')
     <div class="main-main">
@@ -37,4 +37,14 @@
         </div>
     </div>
     @include('footer')
+@stop
+@section('scripts')
+<script type="text/javascript">
+    $(document).ready(function(){
+        footerPosition();
+    });
+    $(window).load(function(){
+        footerPosition();
+    });
+</script>
 @stop

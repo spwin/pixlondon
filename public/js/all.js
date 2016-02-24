@@ -492,6 +492,11 @@ function highlightMenu(){
 
 function colorLines() {
 	if ($(window).width() > 1023) {
+		var height = Math.max($(document).height(), $(window).height());
+		var left_line = $('.color-lines-web.left-line');
+		var right_line = $('.color-lines-web.right-line');
+		left_line.css('height', (height+Math.abs(parseInt(left_line.css('top'))))+'px');
+		right_line.css('height', (height+Math.abs(parseInt(right_line.css('top'))))+'px');
 		$('.color-lines-web').animate({opacity: 1}, 3000);
 	}
 };
@@ -509,6 +514,20 @@ function hamburgerAnimate(){
 		$(this).toggleClass('open');
 	});
 };
+
+/****************** footer positioning ********************/
+
+function footerPosition(){
+	var footer = $('footer');
+	var button = $('.homepage-button');
+	var epsilon = 0;
+	console.log(button.offset().top);
+	console.log(button.outerHeight(true));
+	console.log(footer.offset().top);
+	if(button.offset().top + button.outerHeight(true) + epsilon > footer.offset().top){
+		footer.css('bottom', 'initial');
+	}
+}
 
 /********* executing ........ ************/
 
@@ -539,7 +558,6 @@ $(window).load(function() {
 			var this_image = this;
 			var src = $(this_image).attr('src') || '' ;
 			if(src.length > 0){
-				//this_image.src = options.loading; // show loading
 				var lsrc = $(this_image).attr('lsrc') || '' ;
 				if(lsrc.length > 0){
 					var img = new Image();
