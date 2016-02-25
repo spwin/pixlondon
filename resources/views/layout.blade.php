@@ -5,8 +5,7 @@
     <meta name="robots" content="noindex" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="@yield('description', trans('layout.description'))">
-    <meta name="keywords" content="@yield('keywords', trans('layout.keywords'))">
+    <meta name="description" content="@yield('description')">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     {!! HTML::style('css/app.css', array(), false) !!}
 </head>

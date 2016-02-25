@@ -181,6 +181,12 @@ function footerPosition(){
 	}
 }
 
+/********* show social ************/
+
+function showSocial(){
+	$('.social-container').fadeIn('slow');
+}
+
 /********* executing ........ ************/
 
 $( document ).ready(function() {
@@ -205,6 +211,7 @@ $( document ).ready(function() {
 $(window).load(function() {
 	buttonsHeight();
 	sectionsHeight();
+	showSocial();
 	$(function(){
 		$.each(document.images, function(){
 			var this_image = this;

@@ -1,5 +1,6 @@
 @extends('layout')
-@section('title', 'WEB dizaino ir programavimo paslaugos Londone')
+@section('title', trans('meta.design.title'))
+@section('description', trans('meta.design.description'))
 @section('header')
     @include('header')
 @stop

@@ -1,5 +1,6 @@
 @extends('layout')
-@section('title', 'WEB dizaino ir programavimo paslaugos Londone')
+@section('title', trans('meta.homepage.title'))
+@section('description', trans('meta.homepage.description'))
 @section('body_class', 'main')
 @section('content')
     <div class="main-main">

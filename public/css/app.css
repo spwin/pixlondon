@@ -412,6 +412,9 @@ header {
       header #nav-icon3.open span:nth-child(4) {
         top: 18px; } }
 
+.hidden {
+  display: none; }
+
 div.main-paslaugos {
   width: 100%;
   height: auto;
@@ -458,8 +461,6 @@ div.main-paslaugos {
       z-index: 13;
       display: block;
       position: relative; }
-  div.main-paslaugos .hidden {
-    display: none; }
   div.main-paslaugos .button-content {
     width: 100%;
     height: auto;
@@ -914,7 +915,7 @@ SOCIAL
 .fb-like {
   line-height: 0.8em; }
 
-.social-likes > div {
+.social-container > div {
   display: inline-block;
   margin-left: 20px; }
 

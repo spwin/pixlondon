@@ -539,6 +539,10 @@ header {
 
 }
 
+.hidden {
+  display: none;
+}
+
 div.main-paslaugos {
 
   width: 100%;
@@ -603,10 +607,6 @@ div.main-paslaugos {
       display: block;
       position: relative;
     }
-  }
-
-  .hidden {
-    display: none;
   }
 
   .button-content {
@@ -1251,7 +1251,7 @@ SOCIAL
 .fb-like{
   line-height: 0.8em;
 }
-.social-likes > div{
+.social-container > div{
   display: inline-block;
   margin-left: 20px;
 }
