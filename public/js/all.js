@@ -469,7 +469,7 @@ function checkWidth() {
 
 function mobileMenu() {
 	$('.mob-hamb').on('click', function(){
-		$('.mob-menu').slideToggle('slow');
+		$('.mob-menu').slideToggle('fast');
 	})
 }
 
@@ -521,9 +521,6 @@ function footerPosition(){
 	var footer = $('footer');
 	var button = $('.homepage-button');
 	var epsilon = 0;
-	console.log(button.offset().top);
-	console.log(button.outerHeight(true));
-	console.log(footer.offset().top);
 	if(button.offset().top + button.outerHeight(true) + epsilon > footer.offset().top){
 		footer.css('bottom', 'initial');
 	}
@@ -548,11 +545,11 @@ $( document ).ready(function() {
 	mobileMenu();
 	highlightMenu();
 	hamburgerAnimate();
-	sectionsHeight();
 });
 
 $(window).load(function() {
 	buttonsHeight();
+	sectionsHeight();
 	$(function(){
 		$.each(document.images, function(){
 			var this_image = this;

@@ -403,7 +403,7 @@ MUSU PASLAUGOS PAGE
       background: none;
       position: relative;
       margin-top: 30px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
 
 
       .kokybe-seperator {
@@ -838,16 +838,16 @@ MAIN
     .color-lines-web.left-line {
       top: -115px;
       right: 70%;
-      height: 1000px;
+      height: 500px;
       transform: rotate(180deg);
       &.tall{
-        height: 1105px;
+        height: 500px;
       }
     }
     .color-lines-web.right-line {
       transform: rotateY(180deg);
       top: -400px;
-      height: 1390px;
+      height: 500px;
       left: 67%;
     }
   }

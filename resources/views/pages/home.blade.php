@@ -1,11 +1,7 @@
 @extends('layout')
 @section('title', 'WEB dizaino ir programavimo paslaugos Londone')
-@section('header')
-    @include('header')
-@stop
 @section('body_class', 'main')
 @section('content')
-    @include('menu')
     <div class="main-main">
         <div class="logo-and-text">
             <a href="{{ url('http://'.env('WEB')) }}">

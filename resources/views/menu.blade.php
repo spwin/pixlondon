@@ -1,9 +1,9 @@
 <div class="mob-menu">
     <ul class="mob-menu-lang light">
-        <li>LT</li>
-        <li>EN</li>
-        <li>PL</li>
-        <li>RU</li>
+        <li><a href="{{ url('http://'.env('LT_WEB')) }}">LT</a></li>
+        <li><a href="{{ url('http://'.env('WEB')) }}">EN</a></li>
+        <li><a href="{{ url('http://'.env('PL_WEB')) }}">PL</a></li>
+        <li><a href="{{ url('http://'.env('RU_WEB')) }}">RU</a></li>
     </ul>
     {!! HTML::image('img/menu-line.png', 'menu line', array('class' => 'seperator wide-seperator mob-visible')) !!}
     <ul class="mob-menu-list light">
@@ -20,16 +20,16 @@
     {!! HTML::image('img/menu-line.png', 'menu line', array('class' => 'seperator wide-seperator mob-visible')) !!}
     <div class="mob-menu-social">
         <div class="mob-social-cont">
-            {!! HTML::image('img/social-icons/f-icon-hover.svgz') !!}
+            <a href="{!! env('FACEBOOK') !!}">{!! HTML::image('img/social-icons/f-icon-hover.svgz') !!}</a>
         </div>
         <div class="mob-social-cont">
-            {!! HTML::image('img/social-icons/gplus-icon-hover.svgz') !!}
+            <a href="{!! env('GOOGLEPLUS') !!}">{!! HTML::image('img/social-icons/gplus-icon-hover.svgz') !!}</a>
         </div>
         <div class="mob-social-cont">
-            {!! HTML::image('img/social-icons/twitter-icon-hover.svgz') !!}
+            <a href="{!! env('TWITTER') !!}">{!! HTML::image('img/social-icons/twitter-icon-hover.svgz') !!}</a>
         </div>
         <div class="mob-social-cont">
-            {!! HTML::image('img/social-icons/in-icon-hover.svgz') !!}
+            <a href="{!! env('LINKEDIN') !!}">{!! HTML::image('img/social-icons/in-icon-hover.svgz') !!}</a>
         </div>
     </div>
 </div>
