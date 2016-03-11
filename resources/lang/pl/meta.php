@@ -1,21 +1,21 @@
 <?php
 
 return[
-    'homepage.title' => 'WEB design and SEO services in London | Pixsens',
-    'homepage.description' => 'We specialize in web development and design, SEO, responsive websites, logo and branding. Breathing life into pixels.',
+    'homepage.title' => 'Projektowanie stron internetowych i usługi SEO w Londynie | Pixsens',
+    'homepage.description' => 'Nasze specjalizacje – tworzenie stron internetowych, projektowanie WWW, SEO, tworzenie responsive stron, logo oraz marki firmowej. Breathing pixels into life.',
 
-    'services.title' => 'Things we do | Pixsens',
-    'services.description' => 'We do a lot with your internet things and much more, contact us and we are sure we would satisfy you.',
+    'services.title' => 'To, co robimy | Pixsens',
+    'services.description' => 'Zadbamy o przedstawieniu Twojej działalności w internecie i nie tylko. Skontaktuj się z nami i napewno znajdziemy najlepsze rozwiązanie.',
 
-    'seo.title' =>'Search engines optimization | Pixsens',
-    'seo.description' => 'Good SEO comes naturally from good work, let us to show you what a good work for Search Engines means.',
+    'seo.title' =>'Optymalizacja dla wyszukiwarek internetowych | Pixsens',
+    'seo.description' => 'Najważniejszą podstawą dobrego SEO - dobra i informatywna strona internetowa. Pozwól nam osiągnąć najlepsze rezultaty w określonej dziedzinie dla Twego biznesu.',
 
-    'design.title' => 'We can style everything | Pixsens',
-    'design.description' => 'Give us a direction and we will generate flow of fresh ideas and highlight how unique your business is.',
+    'design.title' => 'Wymagania wasze - projektowanie nasze | Pixsens',
+    'design.description' => 'Ukaż nam kierunek, a skierujemy w nim świeże pomysły i wyróżnimy unikalność Twojego biznesu.',
 
-    'development.title' => 'Coding is our everyday life | Pixsens',
-    'development.description' => 'Enthusiastic Pixsens programmers are thirsty of finding the best solution no matter what it takes.',
+    'development.title' => 'Pisanie kodu to nasza codzienność | Pixsens',
+    'development.description' => 'Pełni entuzjazmu programiści Pixsens zawsze pragną znaleźć najlepsze rozwiązanie, niezależnie od zasobów czasu i kosztów.',
 
-    'contacts.title' => 'Write us | Pixsens',
-    'contacts.description' => 'No matter good or bad, we are always happy to hear from you. Good is a way better though.'
+    'contacts.title' => 'Napisz do nas | Pixsens',
+    'contacts.description' => 'Nie możesz podjąć decyzji, potrzebujesz konsultacji, a może nie wiesz od czego zacząć? Napisz do nas, zawsze jesteśmy gotowi pomóc.'
 ];

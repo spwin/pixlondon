@@ -12,7 +12,7 @@ return [
     'header-text-2' => '<span class="bold">Najpopularniejsza > Najbardziej zaufana > <span class="blue">Najlepiej sprzedająca!</span></span>',
     'under-header-text-2' => 'Formuła <span class="blue">sukcesu</span> <span class="light">jest prosta</span>',
     'paragraph-header-4' => 'Jak podnieść pozycję <span class="bold blue">Twojej strony</span> w wynikach wyszukiwania?',
-    'paragraph-content-4' => '<span class="bold">Zaprzyjaźnij się z <span class="blue">Google!</span></span> Wiadmo, że reklamy Google są jednym z najlepszych i najprostszych sposobów na zwiększenie ilości użytkowników na Twojej stronie.',
+    'paragraph-content-4' => '<span class="bold">Zaprzyjaźnij się z <span class="blue">Google!</span></span> Wiadomo, że reklamy Google są jednym z najlepszych i najprostszych sposobów na zwiększenie ilości użytkowników na Twojej stronie.',
     'paragraph-header-5' => 'Modele <span class="blue">idealnej strony</span>',
     'paragraph-content-5' => 'Wyszukiwarki mają swoje modele idealnych stron. Im lepiej Twoja strona pasuje do takiego idealnego modelu, tym większą prezentuje wartość dla silnika wyszukiwarki.',
     'paragraph-header-6' => 'Pracownicy <span class="blue">Google</span>',

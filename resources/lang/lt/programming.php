@@ -11,12 +11,12 @@ return [
     'paragraph-header-text-2' => 'Lengvas <span class="green">valdymas</span>',
     'paragraph-content-text-2' => '<span class="bold">Genialumas <span class="light">slypi</span> paprastume.</span> Kuo <span class="bold green">paprastesnė</span> svetainės sistema – tuo <span class="bold green">greičiau</span> klientas <span class="bold green">randa</span> reikiamą informaciją.',
     'paragraph-header-text-3' => '<span class="green">Prisitaikantis</span> WEB puslapis',
-    'paragraph-content-text-3' => '<span class="bold"><span class="green">40%</span> žmonių</span>, ieškančių informacijos internete per savo išmanujį, pereina prie kito paieškos rezultato, jei pasirinktas nėra prisitaikantis prie jų išmaniojo telefono ekrano',
+    'paragraph-content-text-3' => '<span class="bold"><span class="green">40%</span> žmonių</span>, ieškančių informacijos internete per savo išmanųjį, pereina prie kito paieškos rezultato, jei pasirinktas nėra prisitaikantis prie jų išmaniojo telefono ekrano.',
 
     'header-text-2' => 'Mūsų <span class="green">pasiūlymas</span>',
-    'under-header-text-2' => '<span class="bold">Pixsens</span> programuotojai <span class="bold green">puikiausiai</span> derina <span class="bold">vaizdo, judėsio</span> bei <span class="bold">valdymo</span> funkcijas.',
-    'paragraph-text-3' => 'Siūlome <span class="bold">Jums <span class="green">aplenkti konkurentus</span></span> ir pasinaudoti Pixsens WEB programavimo paslauga.',
-    'paragraph-text-4' => 'Be to, kuriame WEB versijas <span class="bold">mobiliems įrenginiams</span>. Mūsų darbo rezultatas – <span class="bold green">sklandus, greitas</span> ir <span class="bold green">visur pasiekiamas puslapis</span>. O tai reiškia – <span class="bold">sužavėtas klientas</span>.',
+    'under-header-text-2' => '<span class="bold">Pixsens</span> programuotojai <span class="bold green">puikiausiai</span> derina <span class="bold">vaizdo, judesio</span> bei <span class="bold">valdymo</span> funkcijas.',
+    'paragraph-text-3' => 'Siūlome <span class="bold">Jums <span class="green">aplenkti konkurentus</span></span> ir pasinaudoti Pixsens WEB programavimo paslaugomis.',
+    'paragraph-text-4' => 'Be to, kuriame WEB versijas <span class="bold">mobiliesiems įrenginiams</span>. Mūsų darbo rezultatas – <span class="bold green">sklandus, greitas</span> ir <span class="bold green">visur pasiekiamas puslapis</span>. O tai reiškia – <span class="bold">sužavėtas klientas</span>.',
     'paragraph-text-5' => 'Išvien <span class="bold">užtikriname</span> ir <span class="bold green">lengvesnę, greitesnę</span> bei <span class="bold green">pigesnę</span> Jūsų WEB puslapio <span class="bold green">priežiūrą</span>.',
 
 

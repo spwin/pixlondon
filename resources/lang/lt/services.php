@@ -18,9 +18,9 @@ return [
     'design' => 'DIZAINAS',
     'hidden-text-3' => '<span class="bold orange">Estetiška</span> ir <span class="bold orange">funkcionali</span> išvaizda!',
     'first-text-3' => 'Geras grafinis dizainas užtikrina lankytojo susidomėjimą WEB puslapiu.',
-    'second-text-3' => '<span class="orange">Ar žinojote?</span> Žmogus pasąmoningai apsisprendžia, pirkti ar ne, vos susidaręs pirmąjį įspūdį.',
+    'second-text-3' => '<span class="orange">Ar žinojote?</span> Žmogus pasamoningai apsisprendžia, pirkti ar ne, vos susidaręs pirmąjį įspūdį.',
 
     'warranty' => 'Kokybės garantija',
     'warranty-text-1' => 'Suteikiame <span class="green bold">2 savaičių</span> garantiją po darbų atlikimo, siekdami užtikrinti savo darbo kokybę.',
-    'warranty-text-2' => 'Norime, kad <span class="green">Jūs didžiuotumėtės</span> savo <span class="green">WEB puslapio</span> bei jaustumėte jo našumą.'
+    'warranty-text-2' => 'Norime, kad <span class="green">Jūs didžiuotumėtės</span> savo <span class="green">WEB puslapiu</span> bei jaustumėte jo našumą.'
 ];

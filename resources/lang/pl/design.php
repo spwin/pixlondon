@@ -13,10 +13,10 @@ return[
 
     'header-text-2' => '<span class="bold"><span class="orange">Marka</span> firmy</span>',
     'under-header-text-2' => '<span class="bold">Wizerunek <span class="orange">firmy</span></span>, rozpoznawalny nawet w najmniejszym fragmencie.',
-    'paragraph-text-2' => '<span class="bold orange">Marka firmowa</span> obejmuje mnóstwo ważnych dziedzin firmy, takich jak logo, wizytówki, faktury, reklama, odzież, itp. Dlatego styl musi być <span class="bold">charakterystyczny, <span class="orange">zgrany i gustowny</span></span>. Dla pomyślnego startu biznesu przede wszystkim potrzebne są odpoznanie oraz zapamiętanie marki, a następnie - uznanie.',
+    'paragraph-text-2' => '<span class="bold orange">Marka firmowa</span> obejmuje mnóstwo ważnych dziedzin firmy, takich jak logo, wizytówki, faktury, reklama, odzież, itp. Dlatego styl musi być <span class="bold">charakterystyczny, <span class="orange">zgrany i gustowny</span></span>. Dla pomyślnego startu biznesu przede wszystkim potrzebne są oznanie oraz zapamiętanie marki, a następnie - uznanie.',
     'paragraph-text-3' => 'Przemyślane i odpowiednio dobrany styl odzwierciedla profesjonalizm.',
-    'paragraph-text-4' => 'Jeśli styl firmowy nie jest stały, to wywołuje wrażenie chaotycznj, niesystematycznej działalności.',
-    'paragraph-text-5' => 'Pierwsze wrażenie formuje zdanie o firmie. Więc najważniejsze - dokładnie wizualizować swój styl biznesu, ujawniająctym samym swoją wartość.',
+    'paragraph-text-4' => 'Jeśli styl firmowy nie jest stały, to wywołuje wrażenie chaotycznej, niesystematycznej działalności.',
+    'paragraph-text-5' => 'Pierwsze wrażenie formuje zdanie o firmie. Więc najważniejsze - dokładnie wizualizować swój styl biznesu, ujawniając tym samym swoją wartość.',
 
     'header-text-3' => '<span class="bold"><span class="orange">Logo</span> – to twoja wizytówka',
     'under-header-text-3' => 'nie tylko w cyberprzestrzeni, ale i w realnym świecie.',

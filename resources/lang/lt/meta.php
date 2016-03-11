@@ -1,21 +1,21 @@
 <?php
 
 return[
-    'homepage.title' => 'WEB design and SEO services in London | Pixsens',
-    'homepage.description' => 'We specialize in web development and design, SEO, responsive websites, logo and branding. Breathing life into pixels.',
+    'homepage.title' => 'Web dizaino ir SEO paslaugos Londone | Pixsens',
+    'homepage.description' => 'Mūsų specializacija – internetinių svetainių kūrimas, dizainas, SEO, responsive puslapių, logo bei prekinio ženklo kūrimas. Breathing pixels into life.',
 
-    'services.title' => 'Things we do | Pixsens',
-    'services.description' => 'We do a lot with your internet things and much more, contact us and we are sure we would satisfy you.',
+    'services.title' => 'Tai, ką mes darome | Pixsens',
+    'services.description' => 'Mes pasirūpinsime Jūsų verslo veidu internete ir ne tik, susisiekite su mumis ir tikrai liksite patenkinti.',
 
-    'seo.title' =>'Search engines optimization | Pixsens',
-    'seo.description' => 'Good SEO comes naturally from good work, let us to show you what a good work for Search Engines means.',
+    'seo.title' =>'Optimizavimas paieškos sistemoms | Pixsens',
+    'seo.description' => 'Svarbiausias gero SEO pagrindas - geras bei informatyvus puslapis. Leiskite parodyti, kaip Jūsų puslapį paversti savo srities geriausiu SEO atžvilgiu.',
 
-    'design.title' => 'We can style everything | Pixsens',
-    'design.description' => 'Give us a direction and we will generate flow of fresh ideas and highlight how unique your business is.',
+    'design.title' => 'Stilizuojame viską pagal Jūsų reikalavimus | Pixsens',
+    'design.description' => 'Nurodykite mums kryptį ir mes nukreipsime ja naujų idėjų srautą ir pabrėšime Jūsų verslo unikalumą.',
 
-    'development.title' => 'Coding is our everyday life | Pixsens',
-    'development.description' => 'Enthusiastic Pixsens programmers are thirsty of finding the best solution no matter what it takes.',
+    'development.title' => 'Kodo rašymas tai mūsų kasdienybė | Pixsens',
+    'development.description' => 'Entuziastingi Pixsens programuotojai visuomet trokšta rasti geriausią sprendimą, nepaisydami laiko bei resursų sąnaudos.',
 
-    'contacts.title' => 'Write us | Pixsens',
-    'contacts.description' => 'No matter good or bad, we are always happy to hear from you. Good is a way better though.'
+    'contacts.title' => 'Rašykite mums | Pixsens',
+    'contacts.description' => 'Negalite apsispręsti, reikalaujate konsultacijos, nežinote nuo ko pradėti? Mums visuomet yra malonu gauti Jūsų žinutę.'
 ];

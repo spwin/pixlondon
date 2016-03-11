@@ -5,14 +5,14 @@
     {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mb13')) !!}
     <div class="social-likes">
         <div class="social-container hidden">
-            <a href="https://twitter.com/PixsensLTD" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @PixsensLTD</a>
+            {{--<a href="https://twitter.com/PixsensLTD" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @PixsensLTD</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
             <div class="linkedin">
                 <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
                 <script type="IN/FollowCompany" data-id="3834069" data-counter="right"></script>
-            </div>
+            </div>--}}
             <div class="fb-like" data-href="https://www.facebook.com/pixsensLTD" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
-            <div><div class="g-plusone" data-size="medium" data-href="https://plus.google.com/+PIXSENSlT2014"></div></div>
+            {{--<div><div class="g-plusone" data-size="medium" data-href="https://plus.google.com/+PIXSENSlT2014"></div></div>--}}
         </div>
     </div>
     <div class="footer-flex">

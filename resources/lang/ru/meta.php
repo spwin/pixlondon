@@ -1,21 +1,21 @@
 <?php
 
 return[
-    'homepage.title' => 'WEB design and SEO services in London | Pixsens',
-    'homepage.description' => 'We specialize in web development and design, SEO, responsive websites, logo and branding. Breathing life into pixels.',
+    'homepage.title' => 'Веб-дизайн и SEO услуги в Лондоне | Pixsens',
+    'homepage.description' => 'Мы специализируемся на веб-разработке и SEO, веб-дизайне, создании отзывчивых сайтов, логотипов и брендинга. Breathing pixels into life.',
 
-    'services.title' => 'Things we do | Pixsens',
-    'services.description' => 'We do a lot with your internet things and much more, contact us and we are sure we would satisfy you.',
+    'services.title' => 'То, что мы делаем | Pixsens',
+    'services.description' => 'Мы позаботимся о вашем бизнесе в Интернете и не только. Напишите нам и мы точно оправдаем Ваше доверие.',
 
-    'seo.title' =>'Search engines optimization | Pixsens',
-    'seo.description' => 'Good SEO comes naturally from good work, let us to show you what a good work for Search Engines means.',
+    'seo.title' =>'Поисковая оптимизация | Pixsens',
+    'seo.description' => 'Наиболее важной основой для хорошего SEO - хорошая и информативная страница. Позвольте показать вам, как стать лучшими в своей области.',
 
-    'design.title' => 'We can style everything | Pixsens',
-    'design.description' => 'Give us a direction and we will generate flow of fresh ideas and highlight how unique your business is.',
+    'design.title' => 'Любой дизайн на ваш вкус | Pixsens',
+    'design.description' => 'Укажите нам направление и мы направим туда поток свежих идей и подчеркнем уникальность вашего бизнеса.',
 
-    'development.title' => 'Coding is our everyday life | Pixsens',
-    'development.description' => 'Enthusiastic Pixsens programmers are thirsty of finding the best solution no matter what it takes.',
+    'development.title' => 'Кодирование является нашей повседневностью | Pixsens',
+    'development.description' => 'Полные энтузиазма программисты Pixsens всегда стремятся найти лучшее решение, независимо от затрат времени и ресурсов.',
 
-    'contacts.title' => 'Write us | Pixsens',
-    'contacts.description' => 'No matter good or bad, we are always happy to hear from you. Good is a way better though.'
+    'contacts.title' => 'Пишите нам | Pixsens',
+    'contacts.description' => 'Не можете принять решение? Нужна консультация? Не уверены, с чего начать? Мы всегда рады получить любое Ваше сообщение.'
 ];
