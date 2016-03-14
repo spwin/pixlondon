@@ -28,6 +28,9 @@ footer ul.footer-list li {
 footer ul.footer-list li:first-child {
   font-size: 20px;
 }
+.mb13 {
+  margin-bottom: 12px;
+}
 
 @media screen and (min-width: 1024px) {
   h1 {
@@ -101,9 +104,6 @@ footer ul.footer-list li:first-child {
 }
 
 @media screen and (min-width: 1024px) {
-  .mb13 {
-    margin-bottom: 13px;
-  }
   body {
     width: 87.91%;
   }
