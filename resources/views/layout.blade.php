@@ -10,6 +10,20 @@
 </head>
 <body class="@yield('body_class')">
     <div id="fb-root"></div>
+    <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Organization",
+      "name" : "Pixsens",
+      "url" : "http://www.pixsens.co.uk",
+      "sameAs" : [
+        "https://www.facebook.com/pixsensLTD",
+        "https://plus.google.com/+PIXSENSlT2014",
+        "https://twitter.com/PixsensLTD",
+        "https://www.linkedin.com/company/pixsens"
+     ]
+    }
+    </script>
     <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
