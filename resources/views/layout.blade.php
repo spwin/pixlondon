@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="@yield('description')">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='{!! env('GOOGLEPLUS') !!}' rel='publisher'>
     {!! HTML::style('css/app.css', array(), false) !!}
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -26,10 +27,10 @@
       "name" : "Pixsens",
       "url" : "http://www.pixsens.co.uk",
       "sameAs" : [
-        "https://www.facebook.com/pixsensLTD",
-        "https://plus.google.com/+PIXSENSlT2014",
-        "https://twitter.com/PixsensLTD",
-        "https://www.linkedin.com/company/pixsens"
+        "{!! env('FACEBOOK') !!}",
+        "{!! env('TWITTER') !!}",
+        "{!! env('GOOGLEPLUS') !!}",
+        "{!! env('LINKEDIN') !!}"
      ]
     }
     </script>
