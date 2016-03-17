@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ trans('layout.lang') }}">
 <head>
     <title>@yield('title')</title>
     <meta charset="utf-8" />
