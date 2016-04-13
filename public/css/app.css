@@ -1007,6 +1007,86 @@ body.select-color5 ::-moz-selection {
   background: #16a564;
   /* Gecko Browsers */ }
 
+/******************
+BEST HOMEPAGE EVER
+*******************/
+div.best-main {
+  margin: 75px auto 50px;
+  text-align: center;
+  width: 70%; }
+  @media screen and (min-width: 415px) {
+    div.best-main {
+      margin-top: 40px; } }
+  @media screen and (min-width: 640px) {
+    div.best-main {
+      margin-top: 60px; } }
+  div.best-main .content-header .width50 {
+    background: none; }
+  div.best-main .main-logo {
+    margin: 0 auto;
+    width: 50%;
+    display: block; }
+  div.best-main .text-below-logo {
+    margin-top: 0;
+    font-size: 2.5vw; }
+  div.best-main img.seperator.mt5 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
+  div.best-main .logo-text {
+    font-size: 16px;
+    letter-spacing: 1px; }
+  div.best-main .left {
+    float: left; }
+  div.best-main .right {
+    float: right; }
+  div.best-main .text-left {
+    text-align: left; }
+  div.best-main .mr-20px {
+    margin-right: 20px; }
+  div.best-main .ml-20px {
+    margin-left: 20px; }
+  div.best-main .mt-10px {
+    margin-top: 10px; }
+  div.best-main .mt-60px {
+    margin-top: 100px; }
+  div.best-main .text-right {
+    text-align: right; }
+  div.best-main h2.websites {
+    font-weight: normal;
+    font-size: 2vw; }
+  div.best-main .avatar img {
+    width: 165px;
+    height: auto; }
+  div.best-main .developer-information {
+    margin-top: 10px; }
+    div.best-main .developer-information .developer-title {
+      font-size: 30px;
+      font-weight: bold; }
+    div.best-main .developer-information .developer-name {
+      font-size: 35px; }
+    div.best-main .developer-information .developer-tools {
+      font-size: 12px;
+      max-width: 350px; }
+    div.best-main .developer-information .developer-skills {
+      margin-top: 5px;
+      max-width: 350px;
+      margin-bottom: 10px; }
+    div.best-main .developer-information .developer-rates {
+      font-size: 24px; }
+  @media screen and (min-width: 360px) {
+    div.best-main .logo-text {
+      font-size: 18px; } }
+  @media screen and (min-width: 415px) {
+    div.best-main .logo-text {
+      font-size: 20px; } }
+  @media screen and (min-width: 530px) {
+    div.best-main .logo-text {
+      font-size: 24px; } }
+  @media screen and (min-width: 640px) {
+    div.best-main .logo-text {
+      font-size: 30px; } }
+
 /****************
 This sass code is based on mobile-first,
 so most of queries are 'min-width' and made
@@ -1524,50 +1604,50 @@ MAIN
 @media screen and (min-width: 1024px) {
   body.main header {
     display: none; }
-  div.main-main {
+  div.best-main {
     width: 100%;
     margin-top: 50px; }
-    div.main-main .main-logo {
+    div.best-main .main-logo {
       width: 38%; }
-    div.main-main .logo-and-text {
+    div.best-main .logo-and-text {
       margin-bottom: 20px; }
-    div.main-main .text-below-logo {
+    div.best-main .text-below-logo {
       font-size: 3vw; }
-    div.main-main .main-languages {
+    div.best-main .main-languages {
       margin-left: auto;
       margin-right: auto;
       margin-top: 40px; }
-    div.main-main .logo-text,
-    div.main-main .lang-text,
-    div.main-main .main-text {
+    div.best-main .logo-text,
+    div.best-main .lang-text,
+    div.best-main .main-text {
       font-size: 28px; }
-    div.main-main img.seperator.mt5 {
+    div.best-main img.seperator.mt5 {
       width: 500px;
       margin-bottom: 10px;
       margin-top: 10px; }
-    div.main-main img.seperator.wide-seperator.mob-visible.mb20.mt5 {
+    div.best-main img.seperator.wide-seperator.mob-visible.mb20.mt5 {
       margin-bottom: 50px; }
-    div.main-main img.wide-seperator.mt20,
-    div.main-main img.wide-seperator.mb20 {
+    div.best-main img.wide-seperator.mt20,
+    div.best-main img.wide-seperator.mb20 {
       width: 500px;
       height: 4px;
       margin-left: auto;
       margin-right: auto; }
-    div.main-main .color-lines-mob {
+    div.best-main .color-lines-mob {
       display: none; }
-    div.main-main .color-lines-web {
+    div.best-main .color-lines-web {
       position: absolute;
       display: inline;
       opacity: 0; }
-    div.main-main .color-lines-web.left-line {
+    div.best-main .color-lines-web.left-line {
       top: -115px;
       right: 70%;
       height: 500px;
       -webkit-transform: rotate(180deg);
       transform: rotate(180deg); }
-      div.main-main .color-lines-web.left-line.tall {
+      div.best-main .color-lines-web.left-line.tall {
         height: 500px; }
-    div.main-main .color-lines-web.right-line {
+    div.best-main .color-lines-web.right-line {
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
       top: -400px;

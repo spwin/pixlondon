@@ -3,6 +3,8 @@
 return[
     'homepage.title' => 'WEB design and SEO services in London | Pixsens',
     'homepage.description' => 'We specialize in web development and design, SEO, responsive websites, logo and branding. Breathing life into pixels.',
+    'homepage.best-title' => 'WEB development and SEO services | Pixsens',
+    'homepage.best-description' => 'Meet WEB developers Paul and Stan - quality code and smart solutions. Websites from £350.',
 
     'services.title' => 'Things we do | Pixsens',
     'services.description' => '',

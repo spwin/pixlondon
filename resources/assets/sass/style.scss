@@ -1292,3 +1292,139 @@ body{
     @include selection_color(#16a564, #ffffff);
   }
 }
+
+/******************
+BEST HOMEPAGE EVER
+*******************/
+div.best-main{
+  margin: 75px auto 50px;
+  text-align: center;
+  width: 70%;
+  @media screen and (min-width: 415px) {
+    margin-top: 40px;
+  }
+  @media screen and (min-width: 640px) {
+    margin-top: 60px;
+  }
+  .content-header {
+    .width50 {
+      background: none;
+    }
+  }
+
+  .main-logo {
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+  }
+
+  .text-below-logo {
+    margin-top: 0;
+    font-size: 2.5vw;
+  }
+
+  img.seperator.mt5 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .logo-text {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .left{
+    float: left;
+  }
+
+  .right{
+    float: right;
+  }
+
+  .text-left{
+    text-align: left;
+  }
+
+  .mr-20px{
+    margin-right: 20px;
+  }
+
+  .ml-20px{
+    margin-left: 20px;
+  }
+
+  .mt-10px{
+    margin-top: 10px;
+  }
+
+  .mt-60px{
+    margin-top: 100px;
+  }
+
+  .text-right{
+    text-align: right;
+  }
+
+  h2.websites{
+    font-weight: normal;
+    font-size: 2vw;
+  }
+
+  .avatar{
+    img{
+      width: 165px;
+      height: auto;
+    }
+  }
+
+  .developer-information{
+    margin-top: 10px;
+    .developer-title{
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .developer-name{
+      font-size: 35px;
+    }
+    .developer-tools{
+      font-size: 12px;
+      max-width: 350px;
+    }
+    .developer-skills{
+      margin-top: 5px;
+      max-width: 350px;
+      margin-bottom: 10px;
+    }
+    .developer-rates{
+      font-size: 24px;
+    }
+  }
+
+  @media screen and (min-width: 360px) {
+    .logo-text{
+      font-size: 18px;
+    }
+
+  }
+
+  @media screen and (min-width: 415px) {
+    .logo-text{
+      font-size: 20px;
+    }
+
+  }
+
+  @media screen and (min-width: 530px) {
+    .logo-text {
+      font-size: 24px;
+    }
+  }
+
+  @media screen and (min-width: 640px) {
+    .logo-text {
+      font-size: 30px;
+    }
+
+  }
+}
