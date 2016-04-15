@@ -42,6 +42,7 @@ if($routing_schema == 'content'){
 	Route::post('send-mail', 'PagesController@sendMail');
 } elseif($routing_schema == 'homepage') {
 	Route::get('/', 'PagesController@home');
+	Route::post('send-mail', 'PagesController@sendMail');
 }
 Route::get('sitemap', 'SitemapsController@index');
 Route::get('robots.txt', function ()

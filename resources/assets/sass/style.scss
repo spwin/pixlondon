@@ -1382,6 +1382,7 @@ div.best-main{
       width: 165px;
       height: auto;
     }
+    position: relative;
   }
 
   .developer-information{
@@ -1485,11 +1486,12 @@ div.best-main{
   }
 
   .wpcf7-form input[type="submit"] {
-    padding-left: 33px;
-    width: 90px;
-    height: 29px;
+    padding-left: 60px;
+    width: 125px;
+    height: 50px;
     border-bottom: none;
     margin: 0 auto;
+    font-size: 27px;
     display: block;
     margin-top: 10px;
     background-image: url(../img/cont-mail.svgz);
@@ -1572,5 +1574,88 @@ div.best-main{
 
   .faceblue {
     color: rgb(72, 98, 163);
+  }
+
+  .bubble-paul
+  {
+    top: -90px;
+    right: -100px;
+    padding: 15px;
+    font-size: 21px;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    background: #B78436;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+  }
+
+  .bubble-paul:after
+  {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 26px 17px 0;
+    border-color: #B78436 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -26px;
+    left: 25px;
+  }
+
+  .bubble-stan
+  {
+    top: -90px;
+    left: -210px;
+    padding: 15px;
+    font-size: 21px;
+    position: absolute;
+    width: 295px;
+    height: 30px;
+    background: #0CB0B5;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+  }
+
+  .bubble-stan:after
+  {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 26px 17px 0;
+    border-color: #0CB0B5 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -26px;
+    left: 240px;
+  }
+
+  .golden{
+    color: #B78436;
+  }
+
+  .sea-color{
+    color: #0CB0B5;
+  }
+
+  a.glow, a.glow:hover, a.glow:focus
+  {
+    text-decoration: none;
+    text-shadow: none;
+    -webkit-transition: 100ms linear 0s;
+    -moz-transition: 100ms linear 0s;
+    -o-transition: 100ms linear 0s;
+    transition: 100ms linear 0s;
+    outline: 0 none;
+  }
+
+  a.glow:hover, a.glow:focus
+  {
+    color: #fff;
+    text-shadow: -1px 1px 4px #ffc, 1px -1px 4px #fff;
   }
 }

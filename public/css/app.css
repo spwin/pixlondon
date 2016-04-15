@@ -1059,9 +1059,11 @@ div.best-main {
   div.best-main h2.websites {
     font-weight: normal;
     font-size: 2vw; }
-  div.best-main .avatar img {
-    width: 165px;
-    height: auto; }
+  div.best-main .avatar {
+    position: relative; }
+    div.best-main .avatar img {
+      width: 165px;
+      height: auto; }
   div.best-main .developer-information {
     margin-top: 10px; }
     div.best-main .developer-information .developer-title {
@@ -1127,11 +1129,12 @@ div.best-main {
     font-family: Open Sans, Sans;
     font-weight: 300; }
   div.best-main .wpcf7-form input[type="submit"] {
-    padding-left: 33px;
-    width: 90px;
-    height: 29px;
+    padding-left: 60px;
+    width: 125px;
+    height: 50px;
     border-bottom: none;
     margin: 0 auto;
+    font-size: 27px;
     display: block;
     margin-top: 10px;
     background-image: url(../img/cont-mail.svgz);
@@ -1183,6 +1186,60 @@ div.best-main {
       font-size: 5vw; } }
   div.best-main .faceblue {
     color: #4862a3; }
+  div.best-main .bubble-paul {
+    top: -90px;
+    right: -100px;
+    padding: 15px;
+    font-size: 21px;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    background: #B78436;
+    border-radius: 18px; }
+  div.best-main .bubble-paul:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 26px 17px 0;
+    border-color: #B78436 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -26px;
+    left: 25px; }
+  div.best-main .bubble-stan {
+    top: -90px;
+    left: -210px;
+    padding: 15px;
+    font-size: 21px;
+    position: absolute;
+    width: 295px;
+    height: 30px;
+    background: #0CB0B5;
+    border-radius: 18px; }
+  div.best-main .bubble-stan:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 26px 17px 0;
+    border-color: #0CB0B5 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -26px;
+    left: 240px; }
+  div.best-main .golden {
+    color: #B78436; }
+  div.best-main .sea-color {
+    color: #0CB0B5; }
+  div.best-main a.glow, div.best-main a.glow:hover, div.best-main a.glow:focus {
+    text-decoration: none;
+    text-shadow: none;
+    transition: 100ms linear 0s;
+    outline: 0 none; }
+  div.best-main a.glow:hover, div.best-main a.glow:focus {
+    color: #fff;
+    text-shadow: -1px 1px 4px #ffc, 1px -1px 4px #fff; }
 
 /****************
 This sass code is based on mobile-first,

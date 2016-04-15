@@ -60,7 +60,7 @@ class PagesController extends Controller
             foreach($messages as $field => $message){
                 Input::merge(array($field => ''));
             }
-            return Redirect::to(trans('routes.contacts'))->withErrors($validator)->withInput();
+            return Redirect::back()->withErrors($validator)->withInput();
         } else {
             $data = [
                 'email' => 'info@pixsens.co.uk',
@@ -70,7 +70,7 @@ class PagesController extends Controller
                 $m->from(Input::get('email'), Input::get('name'));
                 $m->to($data['email'], $data['name'])->subject(Input::get('subject'));
             });
-            return Redirect::to(trans('routes.contacts'))->with('success', 'Thank you for your message :)');
+            return Redirect::back()->with('success', 'Thank you for your message :)');
         }
     }
 }
