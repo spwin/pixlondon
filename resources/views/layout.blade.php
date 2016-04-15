@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="@yield('description')">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
     <link href='{!! env('GOOGLEPLUS') !!}' rel='publisher'>
     {!! HTML::style('css/app.css', array(), false) !!}
     <script>

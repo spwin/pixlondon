@@ -11,8 +11,9 @@
             <h1 class="text-below-logo light">WEB Developers</h1>
         </div>
         {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mt5')) !!}
-        <h2 class="websites">Websites from £350</h2>
-        <div class="row">
+        <h2 class="websites">Websites starting at £350</h2>
+        {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mt5')) !!}
+        <div class="row mt20">
             <div class="developer-container">
                 <div class="avatar left">
                     {!! HTML::image('img/funny-paul.png', 'line', array('class' => 'mob-visible')) !!}
@@ -42,7 +43,50 @@
                 <div class="clear"></div>
             </div>
         </div>
-        <div class="row mt-60px">info@pixsens.co.uk</div>
+        <div class="row mt20">
+            <span class="contacts-header">C<span class="green">on</span>tacts</span>
+        </div>
+        {!! HTML::image('img/line.png', 'line', array('class' => 'seperator wide-seperator mob-visible mt5')) !!}
+        <div class="row mt20">
+            <span class="contacts-subheader fs18vw">Our e<span class="green">mail</span></span>
+        </div>
+        <div class="row mt20 fs21vw">info@pixsens.co.uk</div>
+
+        <div class="row mt20">
+            <span class="fs14vw">and... <br><span class="fs18vw"><span class="green">contact</span> form <span class="green">for lazy</span> ones</span></span>
+        </div>
+        <div>
+            @if(Session::has('success'))
+                <div class="alert-box success">
+                    <h2>{{ Session::get('success') }}</h2>
+                </div>
+            @endif
+            @if($errors->any())
+                <div class="alert alert-danger">
+                    @foreach($errors->all() as $error)
+                        <p class="pink">{{ $error }}</p>
+                    @endforeach
+                </div>
+            @endif
+            {!! Form::open([
+                // 'action' => 'PagesController@sendMail',
+                'class' => 'wpcf7-form',
+                'role' => 'form',
+                'method' => '',
+                'novalidate' => 'novalidate'
+                ]) !!}
+                {!! Form::text('name', null, ['autocomplete' => 'off', 'placeholder' => 'Name']) !!}
+                {!! Form::input('email', 'email', null, ['autocomplete' => 'off', 'placeholder' => 'Email']) !!}
+                {!! Form::input('tel', 'phone', null, ['autocomplete' => 'off', 'placeholder' => 'Phone']) !!}
+                {!! Form::text('subject', null, ['autocomplete' => 'off', 'placeholder' => 'Subject']) !!}
+                {!! Form::textarea('content', null, ['autocomplete' => 'off', 'placeholder' => 'Message']) !!}
+                {!! Form::input('submit', 'submit', 'Send', []) !!}
+            {!! Form::close() !!}
+        </div>
+
+        <div class="row mt20">
+            <span class="contacts-header fs21vw"><span class="faceblue">Give</span> us a <span class="faceblue">hug</span> on <span class="faceblue">Face</span>book!</span>
+        </div>
         <div class="row mt-10px">
             <div class="fb-like" data-href="http://www.pixsens.co.uk" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
         </div>

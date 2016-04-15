@@ -1011,15 +1011,19 @@ body.select-color5 ::-moz-selection {
 BEST HOMEPAGE EVER
 *******************/
 div.best-main {
-  margin: 75px auto 50px;
+  margin: 30px auto 50px;
   text-align: center;
-  width: 70%; }
+  width: 70%;
+  max-width: 1200px; }
   @media screen and (min-width: 415px) {
     div.best-main {
-      margin-top: 40px; } }
+      margin-top: 30px; } }
   @media screen and (min-width: 640px) {
     div.best-main {
       margin-top: 60px; } }
+  @media screen and (max-width: 1000px) {
+    div.best-main {
+      width: 95%; } }
   div.best-main .content-header .width50 {
     background: none; }
   div.best-main .main-logo {
@@ -1074,18 +1078,111 @@ div.best-main {
       margin-bottom: 10px; }
     div.best-main .developer-information .developer-rates {
       font-size: 24px; }
+  @media screen and (max-width: 360px) {
+    div.best-main .logo-text,
+    div.best-main h2.websites {
+      font-size: 20px; } }
   @media screen and (min-width: 360px) {
-    div.best-main .logo-text {
+    div.best-main .logo-text,
+    div.best-main h2.websites {
       font-size: 18px; } }
+  @media screen and (max-width: 415px) {
+    div.best-main .text-below-logo {
+      font-size: 4.5vw; } }
   @media screen and (min-width: 415px) {
-    div.best-main .logo-text {
+    div.best-main .logo-text,
+    div.best-main h2.websites {
       font-size: 20px; } }
   @media screen and (min-width: 530px) {
-    div.best-main .logo-text {
+    div.best-main .logo-text,
+    div.best-main h2.websites {
       font-size: 24px; } }
   @media screen and (min-width: 640px) {
-    div.best-main .logo-text {
+    div.best-main .logo-text,
+    div.best-main h2.websites {
       font-size: 30px; } }
+  @media screen and (max-width: 1000px) {
+    div.best-main .text-below-logo {
+      font-size: 3.5vw; }
+    div.best-main .main-logo {
+      width: 54%; } }
+  div.best-main .contacts-header {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 55px; }
+  div.best-main .wpcf7-form input,
+  div.best-main .wpcf7-form textarea {
+    height: 40px;
+    width: 80%;
+    max-width: 450px;
+    display: block;
+    margin: 5px auto 0 auto;
+    background: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 18px;
+    font-family: Open Sans, Sans;
+    font-weight: 300; }
+  div.best-main .wpcf7-form input[type="submit"] {
+    padding-left: 33px;
+    width: 90px;
+    height: 29px;
+    border-bottom: none;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    background-image: url(../img/cont-mail.svgz);
+    background-repeat: no-repeat;
+    cursor: pointer; }
+  div.best-main .wpcf7-form input[type="submit"]:hover {
+    background-image: url(../img/cont-mail-hover.svgz);
+    color: #28ef24; }
+  div.best-main .wpcf7-form textarea {
+    height: 100px; }
+  div.best-main textarea:focus,
+  div.best-main input:focus {
+    outline: 0; }
+  div.best-main .fs18vw {
+    font-size: 1.8vw; }
+  div.best-main .fs21vw {
+    font-size: 2.1vw; }
+  div.best-main .fs14vw {
+    font-size: 1.4vw; }
+  @media screen and (max-width: 1000px) {
+    div.best-main .fs18vw {
+      font-size: 3.8vw; }
+    div.best-main .fs21vw {
+      font-size: 4.1vw; }
+    div.best-main .fs14vw {
+      font-size: 3.4vw; }
+    div.best-main .developer-information .developer-rates {
+      font-size: 28px; }
+    div.best-main .developer-information .developer-tools {
+      font-size: 16px; }
+    div.best-main .developer-information .developer-skills {
+      font-size: 23px; } }
+  @media screen and (max-width: 550px) {
+    div.best-main .fs18vw {
+      font-size: 26px; }
+    div.best-main .fs21vw {
+      font-size: 30px; }
+    div.best-main .fs14vw {
+      font-size: 20px; } }
+  @media screen and (max-width: 400px) {
+    div.best-main .avatar.right,
+    div.best-main .avatar.left {
+      float: none; }
+    div.best-main .main-logo {
+      width: 67%; }
+    div.best-main .text-below-logo {
+      font-size: 5.5vw; }
+    div.best-main h2.websites {
+      font-size: 5vw; } }
+  div.best-main .faceblue {
+    color: #4862a3; }
 
 /****************
 This sass code is based on mobile-first,
@@ -1604,50 +1701,50 @@ MAIN
 @media screen and (min-width: 1024px) {
   body.main header {
     display: none; }
-  div.best-main {
+  div.main-main {
     width: 100%;
     margin-top: 50px; }
-    div.best-main .main-logo {
+    div.main-main .main-logo {
       width: 38%; }
-    div.best-main .logo-and-text {
+    div.main-main .logo-and-text {
       margin-bottom: 20px; }
-    div.best-main .text-below-logo {
+    div.main-main .text-below-logo {
       font-size: 3vw; }
-    div.best-main .main-languages {
+    div.main-main .main-languages {
       margin-left: auto;
       margin-right: auto;
       margin-top: 40px; }
-    div.best-main .logo-text,
-    div.best-main .lang-text,
-    div.best-main .main-text {
+    div.main-main .logo-text,
+    div.main-main .lang-text,
+    div.main-main .main-text {
       font-size: 28px; }
-    div.best-main img.seperator.mt5 {
+    div.main-main img.seperator.mt5 {
       width: 500px;
       margin-bottom: 10px;
       margin-top: 10px; }
-    div.best-main img.seperator.wide-seperator.mob-visible.mb20.mt5 {
+    div.main-main img.seperator.wide-seperator.mob-visible.mb20.mt5 {
       margin-bottom: 50px; }
-    div.best-main img.wide-seperator.mt20,
-    div.best-main img.wide-seperator.mb20 {
+    div.main-main img.wide-seperator.mt20,
+    div.main-main img.wide-seperator.mb20 {
       width: 500px;
       height: 4px;
       margin-left: auto;
       margin-right: auto; }
-    div.best-main .color-lines-mob {
+    div.main-main .color-lines-mob {
       display: none; }
-    div.best-main .color-lines-web {
+    div.main-main .color-lines-web {
       position: absolute;
       display: inline;
       opacity: 0; }
-    div.best-main .color-lines-web.left-line {
+    div.main-main .color-lines-web.left-line {
       top: -115px;
       right: 70%;
       height: 500px;
       -webkit-transform: rotate(180deg);
       transform: rotate(180deg); }
-      div.best-main .color-lines-web.left-line.tall {
+      div.main-main .color-lines-web.left-line.tall {
         height: 500px; }
-    div.best-main .color-lines-web.right-line {
+    div.main-main .color-lines-web.right-line {
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
       top: -400px;
