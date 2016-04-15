@@ -18,17 +18,24 @@ class SitemapsController extends Controller
      */
     public function index()
     {
-        $languages = ['lt', 'pl', 'ru'];
+        Sitemap::addTag('http://' . env(strtoupper(Lang::getLocale()).'_WEB') . '/' . Lang::get('routes.services'), date('c', time()), 'monthly', '1');
+        Sitemap::addTag('http://' . env(strtoupper(Lang::getLocale()).'_WEB') . '/' . Lang::get('routes.seo'), date('c', time()), 'monthly', '1');
+        Sitemap::addTag('http://' . env(strtoupper(Lang::getLocale()).'_WEB') . '/' . Lang::get('routes.design'), date('c', time()), 'monthly', '1');
+        Sitemap::addTag('http://' . env(strtoupper(Lang::getLocale()).'_WEB') . '/' . Lang::get('routes.programming'), date('c', time()), 'monthly', '1');
+        Sitemap::addTag('http://' . env(strtoupper(Lang::getLocale()).'_WEB') . '/' . Lang::get('routes.contacts'), date('c', time()), 'monthly', '1');
+        Sitemap::addTag('http://' . env(strtoupper(Lang::getLocale()).'_WEB'), date('c', time()), 'monthly', '1');
 
+        return Sitemap::render();
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function indexSingle()
+    {
         Sitemap::addTag('http://' . env('WEB'), date('c', time()), 'monthly', '1');
-        foreach($languages as $language) {
-            Sitemap::addTag('http://' . env(strtoupper($language).'_WEB') . '/' . Lang::get('routes.services', [], $language), date('c', time()), 'monthly', '1');
-            Sitemap::addTag('http://' . env(strtoupper($language).'_WEB') . '/' . Lang::get('routes.seo', [], $language), date('c', time()), 'monthly', '1');
-            Sitemap::addTag('http://' . env(strtoupper($language).'_WEB') . '/' . Lang::get('routes.design', [], $language), date('c', time()), 'monthly', '1');
-            Sitemap::addTag('http://' . env(strtoupper($language).'_WEB') . '/' . Lang::get('routes.programming', [], $language), date('c', time()), 'monthly', '1');
-            Sitemap::addTag('http://' . env(strtoupper($language).'_WEB') . '/' . Lang::get('routes.contacts', [], $language), date('c', time()), 'monthly', '1');
-            Sitemap::addTag('http://' . env(strtoupper($language).'_WEB'), date('c', time()), 'monthly', '1');
-        }
         return Sitemap::render();
     }
 

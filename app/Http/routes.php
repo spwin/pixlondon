@@ -40,11 +40,12 @@ if($routing_schema == 'content'){
 	Route::get('/{services}/','PagesController@services');
 	Route::get('/{contacts}/','PagesController@contacts');
 	Route::post('send-mail', 'PagesController@sendMail');
+	Route::get('sitemap', 'SitemapsController@index');
 } elseif($routing_schema == 'homepage') {
 	Route::get('/', 'PagesController@home');
 	Route::post('send-mail', 'PagesController@sendMail');
+	Route::get('sitemap', 'SitemapsController@indexSingle');
 }
-Route::get('sitemap', 'SitemapsController@index');
 Route::get('robots.txt', function ()
 {
 	if (App::environment() == 'production') {
