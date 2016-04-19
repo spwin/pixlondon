@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('best_layout')
 @section('title', trans('meta.homepage.best-title'))
 @section('description', trans('meta.homepage.best-description'))
 @section('body_class', 'main')

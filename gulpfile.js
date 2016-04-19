@@ -13,6 +13,7 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
  mix.sass('app.scss');
+ mix.sass('best_app.scss');
 });
 
 elixir(function(mix) {
@@ -21,4 +22,8 @@ elixir(function(mix) {
   'rotate.js',
   'script.js'
  ]);
+ mix.scripts([
+  'jquery_v1_11_3.js',
+  'best_script.js'
+ ], 'public/js/best_all.js');
 });
